@@ -3,133 +3,460 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Informativa sulla privacy — Guardiani dei Reami</title>
+<title>Privacy — Guardiani dei Reami</title>
 <style>
   :root{
     --ink:#14110b; --ink2:#1e1912; --gold:#c9a227; --gold-bright:#efc75e;
-    --gold-deep:#8f6f16; --vellum:#ece0c4; color-scheme:light dark;
+    --gold-deep:#8f6f16; --vellum:#ece0c4;
   }
   *{box-sizing:border-box;}
+  html,body{background:var(--ink);}
   body{
-    margin:0; background:var(--ink); color:var(--vellum);
+    margin:0; color:var(--vellum);
     font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman",serif;
     line-height:1.65; font-size:17px;
   }
-  .wrap{max-width:760px; margin:0 auto; padding:40px 22px 72px;}
-  header{text-align:center; border-bottom:1px solid #4a3d22; padding-bottom:26px; margin-bottom:30px;}
-  h1{color:var(--gold-bright); font-size:30px; letter-spacing:.02em; margin:0 0 8px;}
+  .wrap{max-width:760px; margin:0 auto; padding:24px 22px 72px;}
+  .topbar{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:14px;}
+  .back{
+    background:transparent; border:1px solid #4a3d22; color:#b7a06f; padding:9px 16px;
+    border-radius:10px; font-family:inherit; font-size:13px; letter-spacing:.12em;
+    text-transform:uppercase; cursor:pointer; text-decoration:none;
+  }
+  .back:active{background:#241d11;}
+  .langs{display:flex; gap:6px; flex-wrap:wrap;}
+  .langs button{
+    background:transparent; border:1px solid #4a3d22; color:#b7a06f; padding:6px 12px;
+    border-radius:8px; font-family:inherit; font-size:13px; cursor:pointer;
+  }
+  .langs button.active{border-color:var(--gold); color:var(--gold-bright); background:var(--ink2);}
+  header{text-align:center; border-bottom:1px solid #4a3d22; padding-bottom:24px; margin-bottom:26px;}
+  h1{color:var(--gold-bright); font-size:29px; letter-spacing:.02em; margin:0 0 8px;}
   .sub{color:#a8996f; font-style:italic; font-size:15px; margin:0;}
-  h2{color:var(--gold); font-size:21px; margin:34px 0 10px; letter-spacing:.02em;}
+  h2{color:var(--gold); font-size:21px; margin:32px 0 10px; letter-spacing:.02em;}
   a{color:var(--gold-bright);}
   p{margin:0 0 14px;}
   ul{margin:0 0 14px; padding-left:22px;}
   li{margin:0 0 8px;}
   .note{color:#a8996f; font-size:13.5px; font-style:italic; border-top:1px solid #4a3d22; margin-top:40px; padding-top:18px;}
   .tag{display:inline-block; background:var(--ink2); border:1px solid #4a3d22; border-radius:8px; padding:2px 9px; font-size:13px; color:#b7a06f;}
+  section[data-doc]{display:none;}
+  section[data-doc].active{display:block;}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Informativa sulla privacy</h1>
-    <p class="sub">Guardiani dei Reami — Guardians of the Realms</p>
-  </header>
+  <div class="topbar">
+    <a class="back" href="index.html" id="back-btn">&#8592; <span data-t="back">Torna al gioco</span></a>
+    <div class="langs" id="lang-switch">
+      <button type="button" data-set="it">IT</button>
+      <button type="button" data-set="en">EN</button>
+      <button type="button" data-set="es">ES</button>
+      <button type="button" data-set="fr">FR</button>
+    </div>
+  </div>
 
-  <p><span class="tag">Ultimo aggiornamento: 9 settembre 2026</span></p>
+  <!-- ============================= ITALIANO ============================= -->
+  <section data-doc="it">
+    <header>
+      <h1>Informativa sulla privacy</h1>
+      <p class="sub">Guardiani dei Reami</p>
+    </header>
+    <p><span class="tag">Ultimo aggiornamento: 9 settembre 2026</span></p>
+    <p>La presente informativa descrive come l'applicazione <strong>Guardiani dei Reami</strong>
+    (di seguito "l'App") tratta le informazioni degli utenti. Ti invitiamo a leggerla con attenzione.
+    Utilizzando l'App accetti le pratiche qui descritte.</p>
 
-  <p>La presente informativa descrive come l'applicazione <strong>Guardiani dei Reami</strong>
-  (di seguito "l'App") tratta le informazioni degli utenti. Ti invitiamo a leggerla con attenzione.
-  Utilizzando l'App accetti le pratiche qui descritte.</p>
+    <h2>1. Titolare del trattamento</h2>
+    <p>Il titolare del trattamento dei dati è <strong>[INSERISCI IL TUO NOME O NOME DELLO SVILUPPATORE]</strong>.
+    Per qualsiasi domanda sulla privacy puoi scrivere a <strong>[INSERISCI LA TUA EMAIL DI CONTATTO]</strong>.</p>
 
-  <h2>1. Titolare del trattamento</h2>
-  <p>Il titolare del trattamento dei dati è <strong>[INSERISCI IL TUO NOME O NOME DELLO SVILUPPATORE]</strong>.
-  Per qualsiasi domanda relativa alla privacy puoi scrivere a <strong>[INSERISCI LA TUA EMAIL DI CONTATTO]</strong>.</p>
+    <h2>2. In sintesi</h2>
+    <p>Guardiani dei Reami è un gioco rompicapo di logica pensato per funzionare
+    <strong>completamente offline</strong>: i tuoi progressi e le tue preferenze restano
+    <strong>solo sul tuo dispositivo</strong> e non vengono inviati a noi né ad alcun server.
+    L'unico trattamento che coinvolge terze parti riguarda gli <strong>annunci pubblicitari</strong>
+    facoltativi (video a premio), gestiti da Google AdMob, come spiegato di seguito.</p>
 
-  <h2>2. In sintesi</h2>
-  <p>Guardiani dei Reami è un gioco rompicapo di logica. È pensato per funzionare
-  <strong>completamente offline</strong>: i tuoi progressi e le tue preferenze restano
-  <strong>solo sul tuo dispositivo</strong> e non vengono inviati a noi né ad alcun server.
-  L'unico trattamento di dati che coinvolge terze parti riguarda gli <strong>annunci pubblicitari</strong>
-  facoltativi (video a premio), gestiti da Google AdMob, come spiegato di seguito.</p>
+    <h2>3. Dati salvati solo sul tuo dispositivo</h2>
+    <p>L'App memorizza localmente alcune informazioni necessarie al suo funzionamento. Questi dati
+    <strong>non lasciano il dispositivo</strong>, non sono accessibili a noi e non vengono condivisi:</p>
+    <ul>
+      <li>i tuoi <strong>progressi di gioco</strong> (livelli completati, trofei, statistiche);</li>
+      <li>le tue <strong>preferenze</strong> (volume di musica ed effetti, segnaposto automatici, lingua);</li>
+      <li>lo stato della <strong>sfida del giorno</strong>;</li>
+      <li>il tuo <strong>profilo di gioco</strong> (nome di fantasia e avatar), usato solo per la
+      personalizzazione all'interno dell'App.</li>
+    </ul>
+    <p>Puoi eliminare questi dati in qualsiasi momento disinstallando l'App o cancellandone i dati
+    dalle impostazioni del sistema operativo.</p>
 
-  <h2>3. Dati salvati solo sul tuo dispositivo</h2>
-  <p>L'App memorizza localmente, sul dispositivo, alcune informazioni necessarie al suo
-  funzionamento. Questi dati <strong>non lasciano il dispositivo</strong>, non sono accessibili
-  a noi e non vengono condivisi con terzi:</p>
-  <ul>
-    <li>i tuoi <strong>progressi di gioco</strong> (livelli completati, trofei, statistiche);</li>
-    <li>le tue <strong>preferenze</strong> (volume di musica ed effetti, segnaposto automatici, lingua);</li>
-    <li>lo stato della <strong>sfida del giorno</strong>;</li>
-    <li>il tuo <strong>profilo di gioco</strong> (nome scelto e avatar), un nome di fantasia che
-    inserisci tu e che serve solo alla personalizzazione all'interno dell'App.</li>
-  </ul>
-  <p>Puoi eliminare tutti questi dati in qualsiasi momento disinstallando l'App o cancellandone
-  i dati dalle impostazioni del sistema operativo.</p>
+    <h2>4. Annunci pubblicitari (Google AdMob)</h2>
+    <p>L'App mostra annunci facoltativi con premio: puoi scegliere di guardare un breve video per
+    ottenere un vantaggio di gioco. Gli annunci sono forniti da <strong>Google AdMob</strong>
+    (Google Ireland Limited / Google LLC). Per erogarli, il kit pubblicitario di Google può raccogliere
+    e trattare alcuni dati, tra cui:</p>
+    <ul>
+      <li>identificatori del dispositivo (ad esempio l'ID pubblicità di Android);</li>
+      <li>informazioni tecniche sul dispositivo e sulla rete (modello, sistema operativo, indirizzo IP);</li>
+      <li>dati sull'interazione con gli annunci.</li>
+    </ul>
+    <p>Google utilizza questi dati per mostrare gli annunci, misurarne il rendimento, prevenire le frodi
+    e, in caso di consenso, personalizzarli. Consulta l'<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Informativa sulla privacy di Google</a>
+    e <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Come Google utilizza i dati</a>.</p>
 
-  <h2>4. Annunci pubblicitari (Google AdMob)</h2>
-  <p>L'App mostra annunci pubblicitari facoltativi con premio: puoi scegliere di guardare un breve
-  video per ottenere un vantaggio di gioco. Questi annunci sono forniti da <strong>Google AdMob</strong>
-  (Google Ireland Limited / Google LLC). Per erogare gli annunci, il kit pubblicitario di Google può
-  raccogliere e trattare alcuni dati, tra cui:</p>
-  <ul>
-    <li>identificatori del dispositivo (ad esempio l'ID pubblicità di Android);</li>
-    <li>informazioni tecniche sul dispositivo e sulla rete (modello, sistema operativo, indirizzo IP);</li>
-    <li>dati sull'interazione con gli annunci.</li>
-  </ul>
-  <p>Questi dati sono utilizzati da Google per mostrare gli annunci, misurarne il rendimento,
-  prevenire le frodi e, in caso di consenso, personalizzarli. Per maggiori dettagli consulta
-  l'<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Informativa sulla privacy di Google</a>
-  e la pagina <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Come Google utilizza i dati</a>.</p>
+    <h2>5. Consenso e base giuridica (GDPR)</h2>
+    <p>Se ti trovi nello Spazio Economico Europeo, nel Regno Unito o in Svizzera, al primo avvio l'App
+    mostra un messaggio di consenso gestito tramite la <strong>Google User Messaging Platform (UMP)</strong>,
+    in conformità al GDPR. Puoi acconsentire o rifiutare gli annunci personalizzati. Le basi giuridiche
+    sono il tuo <strong>consenso</strong> (annunci personalizzati) e il <strong>legittimo interesse</strong>
+    a mostrare annunci non personalizzati e a garantire il funzionamento e la sicurezza del servizio.</p>
+    <p>Puoi <strong>modificare le tue scelte in qualsiasi momento</strong> da
+    <em>Impostazioni → Privacy annunci → Gestisci consenso</em>.</p>
 
-  <h2>5. Consenso e base giuridica (GDPR)</h2>
-  <p>Se ti trovi nello Spazio Economico Europeo, nel Regno Unito o in Svizzera, al primo avvio
-  l'App ti mostra un messaggio di consenso gestito tramite la <strong>Google User Messaging Platform (UMP)</strong>,
-  in conformità al Regolamento (UE) 2016/679 (GDPR). Puoi acconsentire o rifiutare gli annunci
-  personalizzati. Le basi giuridiche del trattamento sono il tuo <strong>consenso</strong> (per gli annunci
-  personalizzati) e il <strong>legittimo interesse</strong> a mostrare annunci non personalizzati e a
-  garantire il funzionamento e la sicurezza del servizio.</p>
-  <p>Puoi <strong>modificare le tue scelte in qualsiasi momento</strong> dall'App, tramite
-  <em>Impostazioni → Privacy annunci → Gestisci consenso</em>.</p>
+    <h2>6. Condivisione dei dati</h2>
+    <p>Non vendiamo i tuoi dati. Gli unici dati condivisi con terzi sono quelli trattati da Google
+    nell'ambito del servizio AdMob descritto sopra.</p>
 
-  <h2>6. Condivisione dei dati</h2>
-  <p>Non vendiamo i tuoi dati. Gli unici dati condivisi con terzi sono quelli trattati da Google
-  nell'ambito del servizio pubblicitario AdMob descritto sopra. Non condividiamo alcun dato con
-  altri soggetti.</p>
+    <h2>7. Conservazione dei dati</h2>
+    <p>I dati salvati sul dispositivo restano finché non disinstalli l'App o non ne cancelli i dati.
+    I dati trattati da Google per gli annunci sono conservati secondo le policy di Google.</p>
 
-  <h2>7. Conservazione dei dati</h2>
-  <p>I dati salvati sul dispositivo restano finché non disinstalli l'App o non ne cancelli i dati.
-  I dati trattati da Google per gli annunci sono conservati secondo le policy di Google.</p>
+    <h2>8. Minori</h2>
+    <p>L'App non è destinata a raccogliere consapevolmente dati personali da bambini. Il contenuto è
+    adatto a un pubblico generale. Se ritieni che un minore ci abbia fornito dati personali, contattaci.</p>
 
-  <h2>8. Minori</h2>
-  <p>L'App non è destinata a raccogliere consapevolmente dati personali da bambini. Il contenuto
-  del gioco è adatto a un pubblico generale. Se ritieni che un minore ci abbia fornito dati
-  personali, contattaci ai recapiti indicati e provvederemo.</p>
+    <h2>9. I tuoi diritti</h2>
+    <p>In base al GDPR hai diritto di accesso, rettifica, cancellazione, limitazione, opposizione e
+    portabilità. Poiché i dati di gioco risiedono solo sul tuo dispositivo, puoi esercitare gran parte
+    di questi diritti cancellando i dati dell'App. Per i dati trattati da Google puoi gestire le preferenze
+    pubblicitarie dalle impostazioni Android. Hai diritto di proporre reclamo all'autorità di controllo
+    (in Italia, il Garante per la protezione dei dati personali).</p>
 
-  <h2>9. I tuoi diritti</h2>
-  <p>In base al GDPR hai diritto di accesso, rettifica, cancellazione, limitazione e opposizione
-  al trattamento, nonché alla portabilità dei dati. Poiché i dati di gioco risiedono solo sul tuo
-  dispositivo, puoi esercitare gran parte di questi diritti direttamente cancellando i dati dell'App.
-  Per i dati trattati da Google puoi gestire le tue preferenze pubblicitarie dalle impostazioni del
-  dispositivo Android. Hai inoltre il diritto di proporre reclamo all'autorità di controllo competente
-  (in Italia, il Garante per la protezione dei dati personali).</p>
+    <h2>10. Sicurezza</h2>
+    <p>Adottiamo misure ragionevoli per proteggere le informazioni. Poiché i dati di gioco restano sul
+    dispositivo, la loro protezione dipende anche dalle misure di sicurezza del dispositivo stesso.</p>
 
-  <h2>10. Sicurezza</h2>
-  <p>Adottiamo misure ragionevoli per proteggere le informazioni. Tuttavia, poiché i dati di gioco
-  restano sul tuo dispositivo, la loro protezione dipende anche dalle misure di sicurezza del
-  dispositivo stesso.</p>
+    <h2>11. Modifiche a questa informativa</h2>
+    <p>Potremmo aggiornare questa informativa in futuro. Le modifiche saranno pubblicate con l'indicazione
+    della nuova data di aggiornamento.</p>
 
-  <h2>11. Modifiche a questa informativa</h2>
-  <p>Potremmo aggiornare questa informativa in futuro. Le modifiche saranno pubblicate a questo
-  indirizzo con l'indicazione della nuova data di aggiornamento.</p>
+    <h2>12. Contatti</h2>
+    <p>Per domande su questa informativa, scrivi a <strong>[INSERISCI LA TUA EMAIL DI CONTATTO]</strong>.</p>
 
-  <h2>12. Contatti</h2>
-  <p>Per domande su questa informativa o sul trattamento dei tuoi dati, scrivi a
-  <strong>[INSERISCI LA TUA EMAIL DI CONTATTO]</strong>.</p>
+    <p class="note">Questo testo è un modello a scopo informativo e non costituisce consulenza legale.
+    Verifica e adatta i contenuti (in particolare i dati del titolare e i recapiti) prima della pubblicazione.</p>
+  </section>
 
-  <p class="note">Questo testo è un modello fornito a scopo informativo e tecnico e non costituisce
-  consulenza legale. Prima della pubblicazione verifica e adatta i contenuti alla tua situazione
-  specifica (in particolare i dati del titolare e i recapiti) ed eventualmente falli rivedere da un
-  professionista.</p>
+  <!-- ============================= ENGLISH ============================= -->
+  <section data-doc="en">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="sub">Guardians of the Realms</p>
+    </header>
+    <p><span class="tag">Last updated: 9 September 2026</span></p>
+    <p>This policy describes how the <strong>Guardians of the Realms</strong> application
+    (the "App") handles user information. Please read it carefully. By using the App you accept
+    the practices described here.</p>
+
+    <h2>1. Data controller</h2>
+    <p>The data controller is <strong>[ENTER YOUR NAME OR DEVELOPER NAME]</strong>.
+    For any privacy question you can write to <strong>[ENTER YOUR CONTACT EMAIL]</strong>.</p>
+
+    <h2>2. In short</h2>
+    <p>Guardians of the Realms is a logic puzzle game designed to work <strong>completely offline</strong>:
+    your progress and preferences stay <strong>only on your device</strong> and are not sent to us or to
+    any server. The only processing involving third parties concerns the optional <strong>advertising</strong>
+    (rewarded videos), handled by Google AdMob, as explained below.</p>
+
+    <h2>3. Data stored only on your device</h2>
+    <p>The App stores some information locally, needed for it to work. This data <strong>never leaves your
+    device</strong>, is not accessible to us and is not shared:</p>
+    <ul>
+      <li>your <strong>game progress</strong> (completed levels, trophies, statistics);</li>
+      <li>your <strong>preferences</strong> (music and sound-effects volume, automatic markers, language);</li>
+      <li>the state of the <strong>daily challenge</strong>;</li>
+      <li>your <strong>game profile</strong> (a nickname and avatar), used only for personalization within the App.</li>
+    </ul>
+    <p>You can delete this data at any time by uninstalling the App or clearing its data from your
+    operating system settings.</p>
+
+    <h2>4. Advertising (Google AdMob)</h2>
+    <p>The App shows optional rewarded ads: you can choose to watch a short video to gain a game benefit.
+    Ads are provided by <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC). To serve them,
+    Google's advertising kit may collect and process certain data, including:</p>
+    <ul>
+      <li>device identifiers (such as the Android Advertising ID);</li>
+      <li>technical information about the device and network (model, operating system, IP address);</li>
+      <li>data about ad interactions.</li>
+    </ul>
+    <p>Google uses this data to serve ads, measure their performance, prevent fraud and, with consent,
+    personalize them. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+    and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses data</a>.</p>
+
+    <h2>5. Consent and legal basis (GDPR)</h2>
+    <p>If you are in the European Economic Area, the United Kingdom or Switzerland, on first launch the App
+    shows a consent message managed through the <strong>Google User Messaging Platform (UMP)</strong>, in
+    compliance with the GDPR. You may accept or refuse personalized ads. The legal bases are your
+    <strong>consent</strong> (personalized ads) and <strong>legitimate interest</strong> in showing
+    non-personalized ads and ensuring the service works and is secure.</p>
+    <p>You can <strong>change your choices at any time</strong> from
+    <em>Settings → Ad privacy → Manage consent</em>.</p>
+
+    <h2>6. Data sharing</h2>
+    <p>We do not sell your data. The only data shared with third parties is that processed by Google as
+    part of the AdMob service described above.</p>
+
+    <h2>7. Data retention</h2>
+    <p>Data stored on the device remains until you uninstall the App or clear its data. Data processed by
+    Google for advertising is retained according to Google's policies.</p>
+
+    <h2>8. Children</h2>
+    <p>The App is not intended to knowingly collect personal data from children. The content is suitable
+    for a general audience. If you believe a child has provided us with personal data, please contact us.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Under the GDPR you have the right of access, rectification, erasure, restriction, objection and
+    portability. Since game data lives only on your device, you can exercise most of these rights by
+    clearing the App's data. For data processed by Google, you can manage advertising preferences from your
+    Android settings. You also have the right to lodge a complaint with your supervisory authority.</p>
+
+    <h2>10. Security</h2>
+    <p>We take reasonable measures to protect information. Because game data stays on your device, its
+    protection also depends on the security measures of the device itself.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We may update this policy in the future. Changes will be published here with a new update date.</p>
+
+    <h2>12. Contact</h2>
+    <p>For questions about this policy, write to <strong>[ENTER YOUR CONTACT EMAIL]</strong>.</p>
+
+    <p class="note">This text is a template for informational purposes and does not constitute legal advice.
+    Review and adapt the content (in particular the controller details and contacts) before publishing.</p>
+  </section>
+
+  <!-- ============================= ESPAÑOL ============================= -->
+  <section data-doc="es">
+    <header>
+      <h1>Política de privacidad</h1>
+      <p class="sub">Guardianes de los Reinos</p>
+    </header>
+    <p><span class="tag">Última actualización: 9 de septiembre de 2026</span></p>
+    <p>Esta política describe cómo la aplicación <strong>Guardianes de los Reinos</strong>
+    (la "App") trata la información de los usuarios. Te invitamos a leerla con atención. Al usar la App
+    aceptas las prácticas aquí descritas.</p>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>El responsable del tratamiento de los datos es <strong>[INTRODUCE TU NOMBRE O EL DEL DESARROLLADOR]</strong>.
+    Para cualquier consulta sobre privacidad puedes escribir a <strong>[INTRODUCE TU CORREO DE CONTACTO]</strong>.</p>
+
+    <h2>2. En resumen</h2>
+    <p>Guardianes de los Reinos es un juego de lógica pensado para funcionar <strong>completamente sin
+    conexión</strong>: tu progreso y tus preferencias permanecen <strong>solo en tu dispositivo</strong> y no
+    se envían a nosotros ni a ningún servidor. El único tratamiento que implica a terceros son los
+    <strong>anuncios</strong> opcionales (vídeos con recompensa), gestionados por Google AdMob, como se explica
+    a continuación.</p>
+
+    <h2>3. Datos guardados solo en tu dispositivo</h2>
+    <p>La App almacena localmente cierta información necesaria para funcionar. Estos datos <strong>no salen del
+    dispositivo</strong>, no son accesibles para nosotros y no se comparten:</p>
+    <ul>
+      <li>tu <strong>progreso de juego</strong> (niveles completados, trofeos, estadísticas);</li>
+      <li>tus <strong>preferencias</strong> (volumen de música y efectos, marcadores automáticos, idioma);</li>
+      <li>el estado del <strong>reto diario</strong>;</li>
+      <li>tu <strong>perfil de juego</strong> (un apodo y un avatar), usado solo para la personalización dentro de la App.</li>
+    </ul>
+    <p>Puedes eliminar estos datos en cualquier momento desinstalando la App o borrando sus datos desde los
+    ajustes del sistema operativo.</p>
+
+    <h2>4. Publicidad (Google AdMob)</h2>
+    <p>La App muestra anuncios opcionales con recompensa: puedes elegir ver un vídeo corto para obtener una
+    ventaja de juego. Los anuncios los proporciona <strong>Google AdMob</strong> (Google Ireland Limited /
+    Google LLC). Para mostrarlos, el kit publicitario de Google puede recopilar y tratar ciertos datos, entre ellos:</p>
+    <ul>
+      <li>identificadores del dispositivo (como el ID de publicidad de Android);</li>
+      <li>información técnica del dispositivo y de la red (modelo, sistema operativo, dirección IP);</li>
+      <li>datos sobre la interacción con los anuncios.</li>
+    </ul>
+    <p>Google usa estos datos para mostrar los anuncios, medir su rendimiento, prevenir el fraude y, con tu
+    consentimiento, personalizarlos. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>
+    y <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Cómo usa Google los datos</a>.</p>
+
+    <h2>5. Consentimiento y base jurídica (RGPD)</h2>
+    <p>Si te encuentras en el Espacio Económico Europeo, el Reino Unido o Suiza, al iniciar por primera vez la
+    App se muestra un mensaje de consentimiento gestionado mediante la <strong>Google User Messaging Platform
+    (UMP)</strong>, conforme al RGPD. Puedes aceptar o rechazar los anuncios personalizados. Las bases jurídicas
+    son tu <strong>consentimiento</strong> (anuncios personalizados) y el <strong>interés legítimo</strong> en
+    mostrar anuncios no personalizados y garantizar el funcionamiento y la seguridad del servicio.</p>
+    <p>Puedes <strong>cambiar tus opciones en cualquier momento</strong> desde
+    <em>Ajustes → Privacidad de anuncios → Gestionar consentimiento</em>.</p>
+
+    <h2>6. Compartición de datos</h2>
+    <p>No vendemos tus datos. Los únicos datos compartidos con terceros son los tratados por Google en el marco
+    del servicio AdMob descrito arriba.</p>
+
+    <h2>7. Conservación de los datos</h2>
+    <p>Los datos guardados en el dispositivo permanecen hasta que desinstales la App o borres sus datos. Los
+    datos tratados por Google para la publicidad se conservan según las políticas de Google.</p>
+
+    <h2>8. Menores</h2>
+    <p>La App no está destinada a recopilar conscientemente datos personales de menores. El contenido es apto
+    para un público general. Si crees que un menor nos ha facilitado datos personales, contáctanos.</p>
+
+    <h2>9. Tus derechos</h2>
+    <p>Según el RGPD tienes derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad.
+    Dado que los datos de juego residen solo en tu dispositivo, puedes ejercer gran parte de estos derechos
+    borrando los datos de la App. Para los datos tratados por Google, puedes gestionar las preferencias
+    publicitarias desde los ajustes de Android. También tienes derecho a presentar una reclamación ante la
+    autoridad de control competente.</p>
+
+    <h2>10. Seguridad</h2>
+    <p>Adoptamos medidas razonables para proteger la información. Como los datos de juego permanecen en tu
+    dispositivo, su protección depende también de las medidas de seguridad del propio dispositivo.</p>
+
+    <h2>11. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política en el futuro. Los cambios se publicarán aquí indicando la nueva fecha
+    de actualización.</p>
+
+    <h2>12. Contacto</h2>
+    <p>Para preguntas sobre esta política, escribe a <strong>[INTRODUCE TU CORREO DE CONTACTO]</strong>.</p>
+
+    <p class="note">Este texto es una plantilla con fines informativos y no constituye asesoramiento legal.
+    Revisa y adapta el contenido (en particular los datos del responsable y los contactos) antes de publicarlo.</p>
+  </section>
+
+  <!-- ============================= FRANÇAIS ============================= -->
+  <section data-doc="fr">
+    <header>
+      <h1>Politique de confidentialité</h1>
+      <p class="sub">Gardiens des Royaumes</p>
+    </header>
+    <p><span class="tag">Dernière mise à jour : 9 septembre 2026</span></p>
+    <p>La présente politique décrit comment l'application <strong>Gardiens des Royaumes</strong>
+    (« l'App ») traite les informations des utilisateurs. Nous t'invitons à la lire attentivement. En
+    utilisant l'App, tu acceptes les pratiques décrites ici.</p>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>Le responsable du traitement des données est <strong>[INDIQUE TON NOM OU CELUI DU DÉVELOPPEUR]</strong>.
+    Pour toute question relative à la confidentialité, tu peux écrire à <strong>[INDIQUE TON E-MAIL DE CONTACT]</strong>.</p>
+
+    <h2>2. En bref</h2>
+    <p>Gardiens des Royaumes est un jeu de logique conçu pour fonctionner <strong>entièrement hors ligne</strong> :
+    ta progression et tes préférences restent <strong>uniquement sur ton appareil</strong> et ne nous sont pas
+    envoyées, ni à aucun serveur. Le seul traitement impliquant des tiers concerne les <strong>publicités</strong>
+    facultatives (vidéos avec récompense), gérées par Google AdMob, comme expliqué ci-dessous.</p>
+
+    <h2>3. Données enregistrées uniquement sur ton appareil</h2>
+    <p>L'App enregistre localement certaines informations nécessaires à son fonctionnement. Ces données
+    <strong>ne quittent pas l'appareil</strong>, ne nous sont pas accessibles et ne sont pas partagées :</p>
+    <ul>
+      <li>ta <strong>progression de jeu</strong> (niveaux terminés, trophées, statistiques) ;</li>
+      <li>tes <strong>préférences</strong> (volume de la musique et des effets, marqueurs automatiques, langue) ;</li>
+      <li>l'état du <strong>défi du jour</strong> ;</li>
+      <li>ton <strong>profil de jeu</strong> (un pseudonyme et un avatar), utilisé uniquement pour la
+      personnalisation au sein de l'App.</li>
+    </ul>
+    <p>Tu peux supprimer ces données à tout moment en désinstallant l'App ou en effaçant ses données depuis les
+    paramètres du système d'exploitation.</p>
+
+    <h2>4. Publicité (Google AdMob)</h2>
+    <p>L'App affiche des publicités facultatives avec récompense : tu peux choisir de regarder une courte vidéo
+    pour obtenir un avantage de jeu. Les publicités sont fournies par <strong>Google AdMob</strong> (Google Ireland
+    Limited / Google LLC). Pour les diffuser, le kit publicitaire de Google peut collecter et traiter certaines
+    données, notamment :</p>
+    <ul>
+      <li>des identifiants de l'appareil (par exemple l'identifiant publicitaire Android) ;</li>
+      <li>des informations techniques sur l'appareil et le réseau (modèle, système d'exploitation, adresse IP) ;</li>
+      <li>des données sur les interactions avec les publicités.</li>
+    </ul>
+    <p>Google utilise ces données pour diffuser les publicités, en mesurer les performances, prévenir la fraude
+    et, avec ton consentement, les personnaliser. Consulte la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité de Google</a>
+    et <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Comment Google utilise les données</a>.</p>
+
+    <h2>5. Consentement et base légale (RGPD)</h2>
+    <p>Si tu te trouves dans l'Espace économique européen, au Royaume-Uni ou en Suisse, au premier lancement
+    l'App affiche un message de consentement géré via la <strong>Google User Messaging Platform (UMP)</strong>,
+    conformément au RGPD. Tu peux accepter ou refuser les publicités personnalisées. Les bases légales sont ton
+    <strong>consentement</strong> (publicités personnalisées) et l'<strong>intérêt légitime</strong> à afficher
+    des publicités non personnalisées et à assurer le fonctionnement et la sécurité du service.</p>
+    <p>Tu peux <strong>modifier tes choix à tout moment</strong> depuis
+    <em>Paramètres → Confidentialité des annonces → Gérer le consentement</em>.</p>
+
+    <h2>6. Partage des données</h2>
+    <p>Nous ne vendons pas tes données. Les seules données partagées avec des tiers sont celles traitées par
+    Google dans le cadre du service AdMob décrit ci-dessus.</p>
+
+    <h2>7. Conservation des données</h2>
+    <p>Les données enregistrées sur l'appareil sont conservées jusqu'à ce que tu désinstalles l'App ou en
+    effaces les données. Les données traitées par Google pour la publicité sont conservées selon les politiques
+    de Google.</p>
+
+    <h2>8. Mineurs</h2>
+    <p>L'App n'est pas destinée à collecter sciemment des données personnelles d'enfants. Le contenu convient à
+    un public général. Si tu penses qu'un mineur nous a fourni des données personnelles, contacte-nous.</p>
+
+    <h2>9. Tes droits</h2>
+    <p>En vertu du RGPD, tu disposes des droits d'accès, de rectification, d'effacement, de limitation,
+    d'opposition et de portabilité. Comme les données de jeu résident uniquement sur ton appareil, tu peux
+    exercer la plupart de ces droits en effaçant les données de l'App. Pour les données traitées par Google, tu
+    peux gérer les préférences publicitaires depuis les paramètres Android. Tu as aussi le droit d'introduire une
+    réclamation auprès de l'autorité de contrôle compétente.</p>
+
+    <h2>10. Sécurité</h2>
+    <p>Nous prenons des mesures raisonnables pour protéger les informations. Comme les données de jeu restent sur
+    ton appareil, leur protection dépend aussi des mesures de sécurité de l'appareil lui-même.</p>
+
+    <h2>11. Modifications de cette politique</h2>
+    <p>Nous pourrons mettre à jour cette politique à l'avenir. Les modifications seront publiées ici avec une
+    nouvelle date de mise à jour.</p>
+
+    <h2>12. Contact</h2>
+    <p>Pour toute question sur cette politique, écris à <strong>[INDIQUE TON E-MAIL DE CONTACT]</strong>.</p>
+
+    <p class="note">Ce texte est un modèle fourni à titre informatif et ne constitue pas un conseil juridique.
+    Vérifie et adapte le contenu (en particulier les coordonnées du responsable) avant publication.</p>
+  </section>
 </div>
+
+<script>
+  (function () {
+    var BACK = { it: 'Torna al gioco', en: 'Back to game', es: 'Volver al juego', fr: 'Retour au jeu' };
+    var TITLE = {
+      it: 'Privacy — Guardiani dei Reami', en: 'Privacy — Guardians of the Realms',
+      es: 'Privacidad — Guardianes de los Reinos', fr: 'Confidentialité — Gardiens des Royaumes'
+    };
+    function pick() {
+      var q = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1];
+      if (q) return q;
+      try { var s = localStorage.getItem('gdr.lang'); if (s) return s; } catch (e) {}
+      var n = (navigator.language || 'it').slice(0, 2).toLowerCase();
+      return n;
+    }
+    function show(lang) {
+      if (['it', 'en', 'es', 'fr'].indexOf(lang) < 0) lang = 'it';
+      document.documentElement.setAttribute('lang', lang);
+      document.title = TITLE[lang];
+      var secs = document.querySelectorAll('section[data-doc]');
+      for (var i = 0; i < secs.length; i++) {
+        secs[i].classList.toggle('active', secs[i].getAttribute('data-doc') === lang);
+      }
+      var btns = document.querySelectorAll('#lang-switch button');
+      for (var j = 0; j < btns.length; j++) {
+        btns[j].classList.toggle('active', btns[j].getAttribute('data-set') === lang);
+      }
+      var bt = document.querySelector('[data-t="back"]');
+      if (bt) bt.textContent = BACK[lang];
+    }
+    document.getElementById('lang-switch').addEventListener('click', function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      show(b.getAttribute('data-set'));
+    });
+    var back = document.getElementById('back-btn');
+    if (back) back.addEventListener('click', function (e) {
+      if (history.length > 1) { e.preventDefault(); history.back(); }
+    });
+    show(pick());
+  })();
+</script>
 </body>
 </html>
