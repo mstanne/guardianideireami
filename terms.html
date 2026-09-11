@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termini di servizio — Guardiani dei Reami</title>
+<style>
+  :root{
+    --gold:#c9a227; --gold-bright:#efc75e; --gold-deep:#8f6f16;
+    --vellum:#ece0c4; --vellum-soft:#cdbf9a;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(circle at 50% 0%,#241d12,#14110b 60%);color:var(--vellum);
+    font-family:var(--serif);line-height:1.65;min-height:100vh;}
+  .wrap{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  header{text-align:center;padding:10px 0;}
+  .emblem{width:64px;height:64px;color:var(--gold-bright);filter:drop-shadow(0 0 12px rgba(201,162,39,.5));}
+  h1{font-size:28px;letter-spacing:.05em;color:var(--gold-bright);margin:10px 0 2px;}
+  .eff{color:#8a7c5c;font-size:14px;margin:0 0 6px;}
+  .langbar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 26px;}
+  .langbar button{font-family:var(--serif);background:linear-gradient(180deg,#241d11,#191309);
+    border:1px solid var(--gold-deep);color:var(--gold-bright);padding:7px 16px;border-radius:12px;
+    cursor:pointer;font-size:14px;letter-spacing:.05em;}
+  .langbar button.active{background:linear-gradient(180deg,#3a2410,#241206);border-color:var(--gold-bright);
+    box-shadow:inset 0 1px 0 rgba(239,199,94,.25);}
+  section[data-lang]{display:none;}
+  section[data-lang].show{display:block;}
+  h2{color:var(--gold-bright);font-size:20px;letter-spacing:.02em;border-bottom:1px solid #3a3020;
+    padding-bottom:7px;margin:30px 0 12px;}
+  p{margin:0 0 14px;}
+  a{color:var(--gold-bright);}
+  .card{background:linear-gradient(160deg,#211a10,#171208);border:1px solid #3a3020;border-radius:14px;
+    padding:18px 22px;margin:0 0 18px;}
+  .back{display:inline-block;margin-top:8px;color:var(--gold);text-decoration:none;font-size:15px;}
+  footer{text-align:center;color:#8a7c5c;font-size:13px;margin-top:34px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M50 8 58 38 88 34 64 52 76 80 50 62 24 80 36 52 12 34 42 38Z" fill="currentColor"/>
+    </svg>
+    <h1 id="title">Termini di servizio</h1>
+    <p class="eff" id="eff">In vigore dal 11 settembre 2026</p>
+    <div class="langbar">
+      <button data-set="it" class="active">Italiano</button>
+      <button data-set="en">English</button>
+      <button data-set="es">Español</button>
+      <button data-set="fr">Français</button>
+    </div>
+  </header>
+
+  <!-- ITALIANO -->
+  <section data-lang="it" class="show">
+    <div class="card">
+      <p>Utilizzando l'applicazione <strong>Guardiani dei Reami</strong> ("l'App") accetti i presenti Termini di servizio. Se non li accetti, ti preghiamo di non utilizzare l'App. L'App è offerta da Francesco Torce ("lo sviluppatore").</p>
+    </div>
+    <h2>1. Licenza d'uso</h2>
+    <p>Ti concediamo una licenza personale, limitata, non esclusiva e non trasferibile per utilizzare l'App a fini di intrattenimento personale. L'App è gratuita.</p>
+    <h2>2. Pubblicità</h2>
+    <p>L'App è finanziata dalla pubblicità e mostra annunci forniti da terze parti. Continuando a usare l'App accetti la visualizzazione di tali annunci. Il trattamento dei dati per gli annunci è descritto nelle <a href="privacy.html">Norme sulla privacy</a>.</p>
+    <h2>3. Proprietà intellettuale</h2>
+    <p>Tutti i contenuti dell'App — grafica, testi, nomi dei reami, codice e design — sono opere originali e restano di proprietà dello sviluppatore. Non è consentito copiarli, distribuirli o modificarli senza autorizzazione.</p>
+    <h2>4. Uso corretto</h2>
+    <p>Ti impegni a non tentare di decompilare, manomettere o aggirare i meccanismi dell'App, né a utilizzarla in modo illecito o per danneggiare altri utenti o i servizi collegati.</p>
+    <h2>5. Nessuna garanzia</h2>
+    <p>L'App è fornita "così com'è", senza garanzie di alcun tipo. Non garantiamo che sia priva di errori o sempre disponibile.</p>
+    <h2>6. Limitazione di responsabilità</h2>
+    <p>Nei limiti consentiti dalla legge, lo sviluppatore non è responsabile per danni indiretti o incidentali derivanti dall'uso o dall'impossibilità di usare l'App.</p>
+    <h2>7. Modifiche</h2>
+    <p>Possiamo aggiornare l'App e questi Termini. Le modifiche saranno pubblicate su questa pagina con la nuova data di entrata in vigore.</p>
+    <h2>8. Legge applicabile</h2>
+    <p>I presenti Termini sono regolati dalla legge italiana, fatte salve le norme inderogabili a tutela del consumatore del tuo paese di residenza.</p>
+    <h2>9. Contatti</h2>
+    <p>Per qualsiasi domanda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Torna alla home</a>
+  </section>
+
+  <!-- ENGLISH -->
+  <section data-lang="en">
+    <div class="card">
+      <p>By using the app <strong>Guardians of the Realms</strong> ("the App") you accept these Terms of Service. If you do not accept them, please do not use the App. The App is offered by Francesco Torce ("the developer").</p>
+    </div>
+    <h2>1. Licence to use</h2>
+    <p>We grant you a personal, limited, non-exclusive and non-transferable licence to use the App for your personal entertainment. The App is free of charge.</p>
+    <h2>2. Advertising</h2>
+    <p>The App is supported by advertising and displays ads provided by third parties. By continuing to use the App you accept the display of such ads. Data processing for ads is described in the <a href="privacy.html">Privacy Policy</a>.</p>
+    <h2>3. Intellectual property</h2>
+    <p>All content in the App — graphics, text, realm names, code and design — is original work and remains the property of the developer. You may not copy, distribute or modify it without permission.</p>
+    <h2>4. Acceptable use</h2>
+    <p>You agree not to attempt to decompile, tamper with or circumvent the App's mechanisms, nor to use it unlawfully or to harm other users or connected services.</p>
+    <h2>5. No warranty</h2>
+    <p>The App is provided "as is", without warranties of any kind. We do not guarantee that it is error-free or always available.</p>
+    <h2>6. Limitation of liability</h2>
+    <p>To the extent permitted by law, the developer is not liable for indirect or incidental damages arising from the use of, or inability to use, the App.</p>
+    <h2>7. Changes</h2>
+    <p>We may update the App and these Terms. Changes will be posted on this page with a new effective date.</p>
+    <h2>8. Governing law</h2>
+    <p>These Terms are governed by Italian law, without prejudice to the mandatory consumer-protection rules of your country of residence.</p>
+    <h2>9. Contact</h2>
+    <p>For any questions: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Back to home</a>
+  </section>
+
+  <!-- ESPAÑOL -->
+  <section data-lang="es">
+    <div class="card">
+      <p>Al usar la aplicación <strong>Guardianes de los Reinos</strong> ("la App") aceptas estos Términos del servicio. Si no los aceptas, te rogamos que no uses la App. La App es ofrecida por Francesco Torce ("el desarrollador").</p>
+    </div>
+    <h2>1. Licencia de uso</h2>
+    <p>Te concedemos una licencia personal, limitada, no exclusiva e intransferible para usar la App con fines de entretenimiento personal. La App es gratuita.</p>
+    <h2>2. Publicidad</h2>
+    <p>La App se financia con publicidad y muestra anuncios de terceros. Al seguir usando la App aceptas la visualización de dichos anuncios. El tratamiento de datos para los anuncios se describe en la <a href="privacy.html">Política de privacidad</a>.</p>
+    <h2>3. Propiedad intelectual</h2>
+    <p>Todo el contenido de la App — gráficos, textos, nombres de los reinos, código y diseño — es obra original y sigue siendo propiedad del desarrollador. No está permitido copiarlo, distribuirlo ni modificarlo sin autorización.</p>
+    <h2>4. Uso adecuado</h2>
+    <p>Te comprometes a no intentar descompilar, manipular o eludir los mecanismos de la App, ni a usarla de forma ilícita o para dañar a otros usuarios o a los servicios conectados.</p>
+    <h2>5. Sin garantía</h2>
+    <p>La App se ofrece "tal cual", sin garantías de ningún tipo. No garantizamos que esté libre de errores ni siempre disponible.</p>
+    <h2>6. Limitación de responsabilidad</h2>
+    <p>En la medida permitida por la ley, el desarrollador no es responsable de daños indirectos o incidentales derivados del uso o de la imposibilidad de usar la App.</p>
+    <h2>7. Cambios</h2>
+    <p>Podemos actualizar la App y estos Términos. Los cambios se publicarán en esta página con la nueva fecha de entrada en vigor.</p>
+    <h2>8. Ley aplicable</h2>
+    <p>Estos Términos se rigen por la ley italiana, sin perjuicio de las normas imperativas de protección al consumidor de tu país de residencia.</p>
+    <h2>9. Contacto</h2>
+    <p>Para cualquier duda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Volver al inicio</a>
+  </section>
+
+  <!-- FRANÇAIS -->
+  <section data-lang="fr">
+    <div class="card">
+      <p>En utilisant l'application <strong>Gardiens des Royaumes</strong> (« l'App ») tu acceptes les présentes Conditions d'utilisation. Si tu ne les acceptes pas, merci de ne pas utiliser l'App. L'App est proposée par Francesco Torce (« le développeur »).</p>
+    </div>
+    <h2>1. Licence d'utilisation</h2>
+    <p>Nous t'accordons une licence personnelle, limitée, non exclusive et non transférable pour utiliser l'App à des fins de divertissement personnel. L'App est gratuite.</p>
+    <h2>2. Publicité</h2>
+    <p>L'App est financée par la publicité et affiche des annonces fournies par des tiers. En continuant à utiliser l'App, tu acceptes l'affichage de ces annonces. Le traitement des données pour la publicité est décrit dans la <a href="privacy.html">Politique de confidentialité</a>.</p>
+    <h2>3. Propriété intellectuelle</h2>
+    <p>Tout le contenu de l'App — graphismes, textes, noms des royaumes, code et design — est une œuvre originale et reste la propriété du développeur. Il est interdit de le copier, de le distribuer ou de le modifier sans autorisation.</p>
+    <h2>4. Utilisation correcte</h2>
+    <p>Tu t'engages à ne pas tenter de décompiler, altérer ou contourner les mécanismes de l'App, ni à l'utiliser de manière illicite ou pour nuire à d'autres utilisateurs ou aux services connectés.</p>
+    <h2>5. Absence de garantie</h2>
+    <p>L'App est fournie « telle quelle », sans garantie d'aucune sorte. Nous ne garantissons pas qu'elle soit exempte d'erreurs ni toujours disponible.</p>
+    <h2>6. Limitation de responsabilité</h2>
+    <p>Dans les limites permises par la loi, le développeur n'est pas responsable des dommages indirects ou accessoires résultant de l'utilisation ou de l'impossibilité d'utiliser l'App.</p>
+    <h2>7. Modifications</h2>
+    <p>Nous pouvons mettre à jour l'App et ces Conditions. Les modifications seront publiées sur cette page avec la nouvelle date d'entrée en vigueur.</p>
+    <h2>8. Droit applicable</h2>
+    <p>Les présentes Conditions sont régies par le droit italien, sans préjudice des règles impératives de protection des consommateurs de ton pays de résidence.</p>
+    <h2>9. Contact</h2>
+    <p>Pour toute question : <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Retour à l'accueil</a>
+  </section>
+
+  <footer><p>© 2026 Guardiani dei Reami</p></footer>
+</div>
+
+<script>
+  var meta = {
+    it:{title:"Termini di servizio", eff:"In vigore dal 11 settembre 2026"},
+    en:{title:"Terms of Service", eff:"Effective from 11 September 2026"},
+    es:{title:"Términos del servicio", eff:"En vigor desde el 11 de septiembre de 2026"},
+    fr:{title:"Conditions d'utilisation", eff:"En vigueur à partir du 11 septembre 2026"}
+  };
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('section[data-lang]').forEach(function(s){
+      s.classList.toggle('show', s.getAttribute('data-lang')===l);
+    });
+    document.querySelectorAll('.langbar button').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-set')===l);
+    });
+    var m=meta[l]||meta.it;
+    document.getElementById('title').textContent=m.title;
+    document.getElementById('eff').textContent=m.eff;
+    document.title=m.title+" — Guardiani dei Reami";
+  }
+  document.querySelectorAll('.langbar button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  var nav=(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
+</script>
+</body>
+</html>
