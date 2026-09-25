@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminazione dell'account — Guardiani dei Reami</title>
+<style>
+  :root{
+    --ink:#14110b; --gold:#c9a227; --gold-bright:#efc75e; --gold-deep:#8f6f16;
+    --vellum:#ece0c4; --vellum-soft:#cdbf9a;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(circle at 50% 0%,#241d12,#14110b 60%);color:var(--vellum);
+    font-family:var(--serif);line-height:1.65;min-height:100vh;}
+  .wrap{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  header{text-align:center;padding:10px 0;}
+  .emblem{width:64px;height:64px;color:var(--gold-bright);filter:drop-shadow(0 0 12px rgba(201,162,39,.5));}
+  h1{font-size:28px;letter-spacing:.05em;color:var(--gold-bright);margin:10px 0 2px;}
+  .eff{color:#8a7c5c;font-size:14px;margin:0 0 6px;}
+  .langbar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 26px;}
+  .langbar button{font-family:var(--serif);background:linear-gradient(180deg,#241d11,#191309);
+    border:1px solid var(--gold-deep);color:var(--gold-bright);padding:7px 16px;border-radius:12px;
+    cursor:pointer;font-size:14px;letter-spacing:.05em;}
+  .langbar button.active{background:linear-gradient(180deg,#3a2410,#241206);border-color:var(--gold-bright);
+    box-shadow:inset 0 1px 0 rgba(239,199,94,.25);}
+  section[data-lang]{display:none;}
+  section[data-lang].show{display:block;}
+  h2{color:var(--gold-bright);font-size:20px;letter-spacing:.02em;border-bottom:1px solid #3a3020;
+    padding-bottom:7px;margin:30px 0 12px;}
+  p{margin:0 0 14px;}
+  ul{margin:0 0 16px;padding-left:22px;} li{margin:0 0 8px;}
+  a{color:var(--gold-bright);}
+  .card{background:linear-gradient(160deg,#211a10,#171208);border:1px solid #3a3020;border-radius:14px;
+    padding:18px 22px;margin:0 0 18px;}
+  .mail{display:inline-block;background:linear-gradient(180deg,#3a2410,#241206);border:1px solid var(--gold-bright);
+    border-radius:12px;padding:10px 18px;color:var(--gold-bright);text-decoration:none;letter-spacing:.03em;margin:2px 0 6px;}
+  .back{display:inline-block;margin-top:8px;color:var(--gold);text-decoration:none;font-size:15px;}
+  footer{text-align:center;color:#8a7c5c;font-size:13px;margin-top:34px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M50 8 58 38 88 34 64 52 76 80 50 62 24 80 36 52 12 34 42 38Z" fill="currentColor"/>
+    </svg>
+    <h1 id="title">Eliminazione dell'account</h1>
+    <p class="eff" id="eff">In vigore dal 25 settembre 2026</p>
+    <div class="langbar">
+      <button data-set="it" class="active">Italiano</button>
+      <button data-set="en">English</button>
+      <button data-set="es">Español</button>
+      <button data-set="fr">Français</button>
+    </div>
+  </header>
+
+  <!-- ITALIANO -->
+  <section data-lang="it" class="show">
+    <div class="card">
+      <p>Questa pagina spiega come richiedere l'eliminazione dell'account e dei dati associati per l'applicazione <strong>Guardiani dei Reami</strong>, sviluppata da Francesco Torce. Per giocare non è richiesta alcuna registrazione: un "account" esiste solo se accedi con <strong>Google Play Games</strong> per il salvataggio nel cloud e le classifiche online.</p>
+    </div>
+    <h2>1. Quali dati vengono eliminati</h2>
+    <p>Su tua richiesta eliminiamo i dati associati al tuo profilo di gioco Google, tra cui:</p>
+    <ul>
+      <li>i progressi salvati nel cloud (livelli completati, tempi, ricompense, impostazioni);</li>
+      <li>l'identificativo del tuo profilo Google Play Games utilizzato dal gioco;</li>
+      <li>i dati della classifica online e della modalità sfida tra giocatori (punteggi, posizionamenti) collegati al tuo profilo.</li>
+    </ul>
+    <p>I dati salvati solo <strong>localmente</strong> sul tuo dispositivo si rimuovono disinstallando l'App o azzerando i progressi dalle Impostazioni del gioco.</p>
+    <h2>2. Come richiedere l'eliminazione</h2>
+    <p>Invia una richiesta all'indirizzo qui sotto, indicando l'email dell'account Google con cui hai giocato. Rispondi dalla stessa email dell'account per permetterci di verificare l'identità.</p>
+    <p><a class="mail" href="mailto:francescotorce@gmail.com?subject=Eliminazione%20account%20-%20Guardiani%20dei%20Reami">francescotorce@gmail.com</a></p>
+    <p>In alternativa, puoi rimuovere autonomamente il salvataggio nel cloud dall'app <strong>Google Play Giochi</strong> → Impostazioni → "Elimina l'account di Play Giochi e i dati", oppure eliminando le partite salvate del gioco.</p>
+    <h2>3. Tempi di conservazione</h2>
+    <p>Elaboriamo le richieste entro <strong>30 giorni</strong>. I dati collegati al tuo profilo vengono eliminati in modo definitivo; alcune copie di backup tecniche possono essere conservate per un massimo di 90 giorni e poi rimosse. Nota: le ricevute e la cronologia degli acquisti sono gestite da Google Play secondo le sue policy e non rientrano tra i dati che possiamo eliminare noi.</p>
+    <h2>4. Contatti</h2>
+    <p>Per qualsiasi domanda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Torna alla home</a>
+  </section>
+
+  <!-- ENGLISH -->
+  <section data-lang="en">
+    <div class="card">
+      <p>This page explains how to request deletion of your account and associated data for the app <strong>Guardians of the Realms</strong>, developed by Francesco Torce. No sign-up is required to play: an "account" exists only if you sign in with <strong>Google Play Games</strong> for cloud save and online leaderboards.</p>
+    </div>
+    <h2>1. What data is deleted</h2>
+    <p>Upon your request we delete the data linked to your Google game profile, including:</p>
+    <ul>
+      <li>cloud-saved progress (completed levels, times, rewards, settings);</li>
+      <li>the Google Play Games profile identifier used by the game;</li>
+      <li>online leaderboard and player-vs-player data (scores, rankings) tied to your profile.</li>
+    </ul>
+    <p>Data stored only <strong>locally</strong> on your device is removed by uninstalling the App or resetting your progress in the game Settings.</p>
+    <h2>2. How to request deletion</h2>
+    <p>Send a request to the address below, indicating the Google account email you played with. Please write from that same account email so we can verify your identity.</p>
+    <p><a class="mail" href="mailto:francescotorce@gmail.com?subject=Account%20deletion%20-%20Guardians%20of%20the%20Realms">francescotorce@gmail.com</a></p>
+    <p>Alternatively, you can remove the cloud save yourself from the <strong>Google Play Games</strong> app → Settings → "Delete Play Games account &amp; data", or by deleting the game's saved games.</p>
+    <h2>3. Retention period</h2>
+    <p>We process requests within <strong>30 days</strong>. Data linked to your profile is permanently deleted; some technical backup copies may be retained for up to 90 days and then removed. Note: purchase receipts and history are managed by Google Play under its own policies and are not among the data we can delete.</p>
+    <h2>4. Contact</h2>
+    <p>For any questions: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Back to home</a>
+  </section>
+
+  <!-- ESPAÑOL -->
+  <section data-lang="es">
+    <div class="card">
+      <p>Esta página explica cómo solicitar la eliminación de tu cuenta y de los datos asociados para la aplicación <strong>Guardianes de los Reinos</strong>, desarrollada por Francesco Torce. Para jugar no se requiere ningún registro: una "cuenta" existe solo si inicias sesión con <strong>Google Play Juegos</strong> para el guardado en la nube y las clasificaciones en línea.</p>
+    </div>
+    <h2>1. Qué datos se eliminan</h2>
+    <p>A petición tuya eliminamos los datos vinculados a tu perfil de juego de Google, entre ellos:</p>
+    <ul>
+      <li>el progreso guardado en la nube (niveles completados, tiempos, recompensas, ajustes);</li>
+      <li>el identificador de tu perfil de Google Play Juegos usado por el juego;</li>
+      <li>los datos de la clasificación en línea y del modo entre jugadores (puntuaciones, posiciones) vinculados a tu perfil.</li>
+    </ul>
+    <p>Los datos guardados solo <strong>localmente</strong> en tu dispositivo se eliminan desinstalando la App o reiniciando el progreso desde los Ajustes del juego.</p>
+    <h2>2. Cómo solicitar la eliminación</h2>
+    <p>Envía una solicitud a la dirección de abajo, indicando el correo de la cuenta de Google con la que jugaste. Escribe desde ese mismo correo para que podamos verificar tu identidad.</p>
+    <p><a class="mail" href="mailto:francescotorce@gmail.com?subject=Eliminacion%20de%20cuenta%20-%20Guardianes%20de%20los%20Reinos">francescotorce@gmail.com</a></p>
+    <p>Como alternativa, puedes eliminar el guardado en la nube desde la app <strong>Google Play Juegos</strong> → Ajustes → "Eliminar la cuenta de Play Juegos y los datos", o borrando las partidas guardadas del juego.</p>
+    <h2>3. Plazo de conservación</h2>
+    <p>Procesamos las solicitudes en un plazo de <strong>30 días</strong>. Los datos vinculados a tu perfil se eliminan de forma definitiva; algunas copias de seguridad técnicas pueden conservarse hasta 90 días y luego se eliminan. Nota: los recibos y el historial de compras los gestiona Google Play según sus propias políticas y no forman parte de los datos que podemos eliminar nosotros.</p>
+    <h2>4. Contacto</h2>
+    <p>Para cualquier duda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Volver al inicio</a>
+  </section>
+
+  <!-- FRANÇAIS -->
+  <section data-lang="fr">
+    <div class="card">
+      <p>Cette page explique comment demander la suppression de ton compte et des données associées pour l'application <strong>Gardiens des Royaumes</strong>, développée par Francesco Torce. Aucune inscription n'est requise pour jouer : un « compte » n'existe que si tu te connectes avec <strong>Google Play Jeux</strong> pour la sauvegarde dans le cloud et les classements en ligne.</p>
+    </div>
+    <h2>1. Quelles données sont supprimées</h2>
+    <p>À ta demande, nous supprimons les données liées à ton profil de jeu Google, notamment :</p>
+    <ul>
+      <li>la progression sauvegardée dans le cloud (niveaux terminés, temps, récompenses, réglages) ;</li>
+      <li>l'identifiant de ton profil Google Play Jeux utilisé par le jeu ;</li>
+      <li>les données du classement en ligne et du mode joueur contre joueur (scores, positions) liées à ton profil.</li>
+    </ul>
+    <p>Les données enregistrées uniquement <strong>localement</strong> sur ton appareil se suppriment en désinstallant l'App ou en réinitialisant la progression dans les Réglages du jeu.</p>
+    <h2>2. Comment demander la suppression</h2>
+    <p>Envoie une demande à l'adresse ci-dessous, en indiquant l'e-mail du compte Google avec lequel tu as joué. Écris depuis ce même e-mail afin que nous puissions vérifier ton identité.</p>
+    <p><a class="mail" href="mailto:francescotorce@gmail.com?subject=Suppression%20de%20compte%20-%20Gardiens%20des%20Royaumes">francescotorce@gmail.com</a></p>
+    <p>Tu peux aussi supprimer toi-même la sauvegarde cloud depuis l'application <strong>Google Play Jeux</strong> → Paramètres → « Supprimer le compte Play Jeux et les données », ou en effaçant les parties enregistrées du jeu.</p>
+    <h2>3. Durée de conservation</h2>
+    <p>Nous traitons les demandes sous <strong>30 jours</strong>. Les données liées à ton profil sont supprimées définitivement ; certaines copies de sauvegarde techniques peuvent être conservées jusqu'à 90 jours puis supprimées. Remarque : les reçus et l'historique des achats sont gérés par Google Play selon ses propres règles et ne font pas partie des données que nous pouvons supprimer.</p>
+    <h2>4. Contact</h2>
+    <p>Pour toute question : <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="index.html">← Retour à l'accueil</a>
+  </section>
+
+  <footer><p>© 2026 Guardiani dei Reami</p></footer>
+</div>
+
+<script>
+  var meta = {
+    it:{title:"Eliminazione dell'account", eff:"In vigore dal 25 settembre 2026"},
+    en:{title:"Account deletion", eff:"Effective from 25 September 2026"},
+    es:{title:"Eliminación de la cuenta", eff:"En vigor desde el 25 de septiembre de 2026"},
+    fr:{title:"Suppression du compte", eff:"En vigueur à partir du 25 septembre 2026"}
+  };
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('section[data-lang]').forEach(function(s){
+      s.classList.toggle('show', s.getAttribute('data-lang')===l);
+    });
+    document.querySelectorAll('.langbar button').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-set')===l);
+    });
+    var m=meta[l]||meta.it;
+    document.getElementById('title').textContent=m.title;
+    document.getElementById('eff').textContent=m.eff;
+    document.title=m.title+" — Guardiani dei Reami";
+  }
+  document.querySelectorAll('.langbar button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  var nav=(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
+</script>
+</body>
+</html>
