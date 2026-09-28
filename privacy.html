@@ -45,7 +45,7 @@
       <path d="M50 8 58 38 88 34 64 52 76 80 50 62 24 80 36 52 12 34 42 38Z" fill="currentColor"/>
     </svg>
     <h1 id="title">Norme sulla privacy</h1>
-    <p class="eff" id="eff">In vigore dal 11 settembre 2026</p>
+    <p class="eff" id="eff">In vigore dal 28 settembre 2026</p>
     <div class="langbar">
       <button data-set="it" class="active">Italiano</button>
       <button data-set="en">English</button>
@@ -57,29 +57,64 @@
   <!-- ITALIANO -->
   <section data-lang="it" class="show">
     <div class="card">
-      <p>La presente informativa descrive come l'applicazione <strong>Guardiani dei Reami</strong> ("l'App") tratta le informazioni degli utenti. L'App è sviluppata da Francesco Torce ("noi", "lo sviluppatore"). Rispettiamo la tua privacy e raccogliamo il minimo indispensabile per far funzionare il gioco.</p>
+      <p>La presente informativa descrive come l'applicazione <strong>Guardiani dei Reami</strong> ("l'App") tratta le informazioni degli utenti. L'App è sviluppata da Francesco Torce ("noi", "lo sviluppatore"), titolare del trattamento. Cerchiamo di raccogliere solo ciò che serve a far funzionare il gioco, e qui ti spieghiamo esattamente cosa.</p>
     </div>
-    <h2>1. Nessuna registrazione richiesta</h2>
-    <p>Per giocare non è necessario creare un account né fornire dati personali. I progressi di gioco (livelli completati, tempi, ricompense, impostazioni) sono salvati <strong>localmente sul tuo dispositivo</strong>.</p>
-    <h2>2. Salvataggio nel cloud (facoltativo)</h2>
-    <p>Se scegli di accedere con <strong>Google Play Games Services</strong>, l'App salva i tuoi progressi nel cloud tramite la funzione "Partite salvate" di Google, così puoi ritrovarli su altri dispositivi. In questo caso vengono trattati un identificativo del tuo profilo di gioco Google e i dati di avanzamento. L'accesso è del tutto opzionale: puoi usare l'App senza mai effettuarlo.</p>
-    <h2>3. Pubblicità</h2>
-    <p>L'App mostra annunci pubblicitari tramite <strong>Google AdMob</strong>. Per erogare gli annunci, Google e i suoi partner possono raccogliere e trattare dati quali l'identificativo pubblicitario del dispositivo, l'indirizzo IP e informazioni sull'utilizzo. Nello Spazio Economico Europeo, nel Regno Unito e in Svizzera ti viene richiesto il <strong>consenso</strong> prima del caricamento degli annunci, tramite il modulo di Google (User Messaging Platform). Puoi modificare la tua scelta in qualsiasi momento dalle Impostazioni dell'App.</p>
-    <h2>4. Servizi di terze parti</h2>
+
+    <h2>1. Giocare senza account</h2>
+    <p>Per giocare non devi creare un account né fornire dati personali. I progressi (livelli completati, tempi, ricompense, oggetti sbloccati, impostazioni, statistiche) sono salvati <strong>localmente sul tuo dispositivo</strong>. La Campagna, la Sfida del Giorno e le modalità Zen, Logica e Infinita funzionano anche senza connessione.</p>
+
+    <h2>2. Accesso con Google Play Giochi (facoltativo)</h2>
+    <p>Puoi scegliere di accedere con <strong>Google Play Giochi</strong>. L'accesso serve a due cose:</p>
+    <ul>
+      <li><strong>Salvataggio nel cloud</strong>: i tuoi progressi vengono salvati tramite la funzione "Partite salvate" di Google, così puoi ritrovarli su un altro dispositivo.</li>
+      <li><strong>Funzioni online</strong> (vedi punto 3): tramite <strong>Firebase Authentication</strong> viene creato un identificativo utente collegato al tuo profilo Google Play Giochi. Non riceviamo la password del tuo account Google.</li>
+    </ul>
+    <p>L'accesso è del tutto facoltativo: puoi usare l'App senza mai effettuarlo.</p>
+
+    <h2>3. Classifiche e Guerra tra Reami (funzioni online)</h2>
+    <p>Se usi la Classifica del Giorno o la modalità Guerra tra Reami, sui server di Google (<strong>Cloud Firestore</strong> e <strong>Cloud Functions</strong> di Firebase) vengono memorizzati: il tuo identificativo utente, il <strong>nome di gioco</strong> che hai scelto, l'avatar e la cornice, i punteggi giornalieri, gli esiti e i tempi delle partite, il punteggio di abilità e settimanale, i gettoni e gli oggetti sbloccati in quella modalità.</p>
+    <p><strong>Nome di gioco, avatar, cornice e punteggi sono visibili agli altri giocatori.</strong> Non usare come nome di gioco il tuo nome reale o altre informazioni personali. Alcuni rivali mostrati nelle classifiche e in Guerra tra Reami sono avversari simulati dal gioco.</p>
+
+    <h2>4. Pubblicità</h2>
+    <p>L'App mostra annunci (banner, interstiziali e video con premio facoltativi) tramite <strong>Google AdMob</strong>. Per erogarli, Google e i suoi partner possono raccogliere e trattare dati come l'identificativo pubblicitario del dispositivo, l'indirizzo IP e informazioni sull'utilizzo e sulle interazioni con gli annunci. Nello Spazio Economico Europeo, nel Regno Unito e in Svizzera ti viene chiesto il <strong>consenso</strong> prima del caricamento degli annunci, tramite il modulo di Google (User Messaging Platform). Puoi cambiare la tua scelta in qualsiasi momento da Impostazioni › Gestisci consenso. Puoi anche rimuovere la pubblicità con un acquisto in-app.</p>
+
+    <h2>5. Statistiche d'uso</h2>
+    <p>L'App usa <strong>Google Analytics per Firebase</strong> per capire come viene usata e misurare l'efficacia delle nostre campagne pubblicitarie (Google Ads). Vengono raccolti un identificativo di installazione (pseudonimo, non il tuo nome), l'identificativo pubblicitario del dispositivo, informazioni tecniche sul dispositivo (modello, versione del sistema, lingua), la posizione approssimativa ricavata dall'indirizzo IP mascherato, le sessioni di utilizzo e alcuni eventi: la prima apertura dell'App, il completamento del primo livello e gli acquisti (prodotto, importo e valuta). Non inviamo a Google Analytics il tuo nome di gioco né i dati delle partite.</p>
+
+    <h2>6. Acquisti in-app</h2>
+    <p>L'App offre acquisti facoltativi (pacchetti di cristalli e la rimozione della pubblicità), gestiti da <strong>Google Play</strong>. I dati di pagamento sono trattati esclusivamente da Google: noi non li riceviamo. Riceviamo solo la conferma dell'acquisto (prodotto acquistato e relativo identificativo d'ordine), necessaria per accreditarti quanto acquistato e per ripristinare gli acquisti una tantum.</p>
+
+    <h2>7. Notifiche e diagnostica</h2>
+    <p>Il promemoria della Sfida del Giorno è una <strong>notifica locale</strong>, programmata sul dispositivo: nessun dato viene inviato. Gli eventuali errori tecnici dell'App vengono registrati <strong>solo sul dispositivo</strong> (Impostazioni › Diagnostica) e non ci vengono mai inviati in automatico: li riceviamo solo se decidi tu di condividerli.</p>
+
+    <h2>8. Servizi di terze parti</h2>
     <p>L'App si affida ai seguenti servizi di Google, che trattano i dati secondo le proprie informative:</p>
     <ul>
-      <li>Google Play Games Services — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>Google Play Giochi e Google Play (acquisti) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
       <li>Google AdMob — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></li>
+      <li>Firebase (Authentication, Cloud Firestore, Cloud Functions, Google Analytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     </ul>
-    <h2>5. Minori</h2>
-    <p>L'App è un rompicapo adatto a un pubblico generale e non è rivolta specificamente ai bambini. Non raccogliamo consapevolmente dati personali di minori. Se ritieni che un minore ci abbia fornito dati, contattaci e provvederemo a rimuoverli.</p>
-    <h2>6. Conservazione dei dati</h2>
-    <p>I dati locali restano sul dispositivo finché non disinstalli l'App o non azzeri i progressi dalle Impostazioni. I dati salvati nel cloud restano associati al tuo account Google fino a quando non li elimini tramite le impostazioni di Google Play Giochi.</p>
-    <h2>7. I tuoi diritti</h2>
-    <p>In base al GDPR e alle normative applicabili hai diritto di accedere, rettificare o cancellare i tuoi dati e di revocare il consenso alla pubblicità personalizzata. Per esercitarli puoi scriverci all'indirizzo indicato sotto.</p>
-    <h2>8. Modifiche</h2>
-    <p>Potremmo aggiornare questa informativa. Le modifiche saranno pubblicate su questa pagina con la nuova data di entrata in vigore.</p>
-    <h2>9. Contatti</h2>
+    <p>Google può trattare questi dati anche al di fuori dello Spazio Economico Europeo, applicando le garanzie previste dalla normativa (ad esempio le clausole contrattuali standard). Le comunicazioni tra l'App e questi servizi sono cifrate.</p>
+
+    <h2>9. Minori</h2>
+    <p>L'App è un rompicapo per un pubblico generale e non è rivolta specificamente ai bambini. Non raccogliamo consapevolmente dati personali di minori. Se ritieni che un minore ci abbia fornito dati, contattaci e provvederemo a rimuoverli.</p>
+
+    <h2>10. Conservazione ed eliminazione dei dati</h2>
+    <ul>
+      <li><strong>Dati locali</strong>: restano sul dispositivo finché non disinstalli l'App o non azzeri i progressi (Impostazioni › Progressi di gioco).</li>
+      <li><strong>Salvataggio nel cloud</strong>: resta associato al tuo account Google finché non lo elimini dalle impostazioni di Google Play Giochi o non ce ne chiedi l'eliminazione.</li>
+      <li><strong>Dati delle funzioni online</strong>: restano memorizzati finché il tuo profilo online è attivo o finché non ne chiedi l'eliminazione.</li>
+      <li><strong>Statistiche d'uso</strong>: sono conservate secondo i periodi di conservazione impostati in Google Analytics.</li>
+    </ul>
+    <p>Per chiedere l'eliminazione del tuo account e dei dati associati segui le istruzioni nella pagina <a href="elimina-account.html">Eliminazione dell'account</a>.</p>
+
+    <h2>11. I tuoi diritti</h2>
+    <p>In base al GDPR e alle normative applicabili hai diritto di accedere ai tuoi dati, rettificarli, cancellarli, limitarne od opporti al trattamento e di revocare il consenso alla pubblicità personalizzata. Puoi anche proporre reclamo all'autorità di controllo (in Italia, il Garante per la protezione dei dati personali). Per esercitare i tuoi diritti scrivici all'indirizzo indicato sotto.</p>
+
+    <h2>12. Modifiche</h2>
+    <p>Potremmo aggiornare questa informativa, ad esempio quando l'App cambia. Le modifiche saranno pubblicate su questa pagina con la nuova data di entrata in vigore.</p>
+
+    <h2>13. Contatti</h2>
     <p>Per qualsiasi domanda sulla privacy: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
     <a class="back" href="index.html">← Torna alla home</a>
   </section>
@@ -87,29 +122,64 @@
   <!-- ENGLISH -->
   <section data-lang="en">
     <div class="card">
-      <p>This policy describes how the app <strong>Guardians of the Realms</strong> ("the App") handles user information. The App is developed by Francesco Torce ("we", "the developer"). We respect your privacy and collect only the minimum needed to run the game.</p>
+      <p>This policy describes how the app <strong>Guardians of the Realms</strong> ("the App") handles user information. The App is developed by Francesco Torce ("we", "the developer"), the data controller. We try to collect only what the game needs to work, and here we explain exactly what that is.</p>
     </div>
-    <h2>1. No account required</h2>
-    <p>You do not need to create an account or provide personal data to play. Your game progress (completed levels, times, rewards, settings) is stored <strong>locally on your device</strong>.</p>
-    <h2>2. Cloud save (optional)</h2>
-    <p>If you choose to sign in with <strong>Google Play Games Services</strong>, the App saves your progress to the cloud using Google's "Saved Games" feature, so you can recover it on other devices. In that case, a Google Play Games profile identifier and your progress data are processed. Signing in is entirely optional: you can use the App without ever doing so.</p>
-    <h2>3. Advertising</h2>
-    <p>The App displays ads through <strong>Google AdMob</strong>. To serve ads, Google and its partners may collect and process data such as the device advertising identifier, IP address and usage information. In the European Economic Area, the UK and Switzerland you are asked for <strong>consent</strong> before ads load, via Google's User Messaging Platform. You can change your choice at any time in the App's Settings.</p>
-    <h2>4. Third-party services</h2>
+
+    <h2>1. Playing without an account</h2>
+    <p>You do not need to create an account or provide personal data to play. Your progress (completed levels, times, rewards, unlocked items, settings, statistics) is stored <strong>locally on your device</strong>. The Campaign, the Daily Challenge and the Zen, Logic and Endless modes also work without a connection.</p>
+
+    <h2>2. Signing in with Google Play Games (optional)</h2>
+    <p>You can choose to sign in with <strong>Google Play Games</strong>. Signing in is used for two things:</p>
+    <ul>
+      <li><strong>Cloud save</strong>: your progress is saved through Google's "Saved Games" feature, so you can recover it on another device.</li>
+      <li><strong>Online features</strong> (see section 3): <strong>Firebase Authentication</strong> creates a user identifier linked to your Google Play Games profile. We never receive your Google account password.</li>
+    </ul>
+    <p>Signing in is entirely optional: you can use the App without ever doing so.</p>
+
+    <h2>3. Leaderboards and War of the Realms (online features)</h2>
+    <p>If you use the Daily Leaderboard or the War of the Realms mode, the following is stored on Google's servers (Firebase <strong>Cloud Firestore</strong> and <strong>Cloud Functions</strong>): your user identifier, the <strong>in-game name</strong> you chose, your avatar and frame, your daily scores, match results and times, your skill and weekly ratings, and the tokens and items unlocked in that mode.</p>
+    <p><strong>Your in-game name, avatar, frame and scores are visible to other players.</strong> Do not use your real name or other personal information as your in-game name. Some rivals shown in the leaderboards and in War of the Realms are opponents simulated by the game.</p>
+
+    <h2>4. Advertising</h2>
+    <p>The App shows ads (banners, interstitials and optional rewarded videos) through <strong>Google AdMob</strong>. To serve them, Google and its partners may collect and process data such as the device advertising identifier, IP address and information about usage and ad interactions. In the European Economic Area, the UK and Switzerland you are asked for <strong>consent</strong> before ads load, via Google's User Messaging Platform. You can change your choice at any time in Settings › Manage consent. You can also remove ads with an in-app purchase.</p>
+
+    <h2>5. Usage statistics</h2>
+    <p>The App uses <strong>Google Analytics for Firebase</strong> to understand how it is used and to measure the effectiveness of our advertising campaigns (Google Ads). It collects an installation identifier (pseudonymous, not your name), the device advertising identifier, technical device information (model, OS version, language), your approximate location derived from your masked IP address, usage sessions, and a few events: the first time the App is opened, completion of the first level, and purchases (product, amount and currency). We do not send your in-game name or match data to Google Analytics.</p>
+
+    <h2>6. In-app purchases</h2>
+    <p>The App offers optional purchases (crystal packs and ad removal), handled by <strong>Google Play</strong>. Payment details are processed only by Google: we never receive them. We only receive confirmation of the purchase (the product bought and its order identifier), which we need to credit your purchase and to restore one-time purchases.</p>
+
+    <h2>7. Notifications and diagnostics</h2>
+    <p>The Daily Challenge reminder is a <strong>local notification</strong> scheduled on your device: no data is sent. Any technical errors in the App are recorded <strong>only on your device</strong> (Settings › Diagnostics) and are never sent to us automatically: we only receive them if you choose to share them.</p>
+
+    <h2>8. Third-party services</h2>
     <p>The App relies on the following Google services, which process data under their own policies:</p>
     <ul>
-      <li>Google Play Games Services — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>Google Play Games and Google Play (purchases) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
       <li>Google AdMob — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></li>
+      <li>Firebase (Authentication, Cloud Firestore, Cloud Functions, Google Analytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     </ul>
-    <h2>5. Children</h2>
+    <p>Google may process this data outside the European Economic Area, applying the safeguards required by law (for example, standard contractual clauses). Communication between the App and these services is encrypted.</p>
+
+    <h2>9. Children</h2>
     <p>The App is a general-audience puzzle and is not specifically directed at children. We do not knowingly collect personal data from minors. If you believe a minor has provided us with data, contact us and we will remove it.</p>
-    <h2>6. Data retention</h2>
-    <p>Local data stays on your device until you uninstall the App or reset your progress in Settings. Cloud-saved data remains linked to your Google account until you delete it through your Google Play Games settings.</p>
-    <h2>7. Your rights</h2>
-    <p>Under the GDPR and applicable laws you have the right to access, correct or delete your data and to withdraw consent to personalised advertising. To exercise these rights, write to the address below.</p>
-    <h2>8. Changes</h2>
-    <p>We may update this policy. Changes will be posted on this page with a new effective date.</p>
-    <h2>9. Contact</h2>
+
+    <h2>10. Data retention and deletion</h2>
+    <ul>
+      <li><strong>Local data</strong>: stays on your device until you uninstall the App or reset your progress (Settings › Game progress).</li>
+      <li><strong>Cloud save</strong>: stays linked to your Google account until you delete it in your Google Play Games settings or ask us to delete it.</li>
+      <li><strong>Online feature data</strong>: is kept while your online profile is active or until you ask us to delete it.</li>
+      <li><strong>Usage statistics</strong>: are kept according to the retention periods set in Google Analytics.</li>
+    </ul>
+    <p>To request deletion of your account and associated data, follow the instructions on the <a href="elimina-account.html">Account deletion</a> page.</p>
+
+    <h2>11. Your rights</h2>
+    <p>Under the GDPR and applicable laws you have the right to access, correct and delete your data, to restrict or object to its processing, and to withdraw consent to personalised advertising. You may also lodge a complaint with your data protection authority. To exercise your rights, write to the address below.</p>
+
+    <h2>12. Changes</h2>
+    <p>We may update this policy, for example when the App changes. Changes will be posted on this page with a new effective date.</p>
+
+    <h2>13. Contact</h2>
     <p>For any privacy questions: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
     <a class="back" href="index.html">← Back to home</a>
   </section>
@@ -117,29 +187,64 @@
   <!-- ESPAÑOL -->
   <section data-lang="es">
     <div class="card">
-      <p>Esta política describe cómo la aplicación <strong>Guardianes de los Reinos</strong> ("la App") trata la información de los usuarios. La App está desarrollada por Francesco Torce ("nosotros", "el desarrollador"). Respetamos tu privacidad y recopilamos solo lo mínimo necesario para el funcionamiento del juego.</p>
+      <p>Esta política describe cómo la aplicación <strong>Guardianes de los Reinos</strong> ("la App") trata la información de los usuarios. La App está desarrollada por Francesco Torce ("nosotros", "el desarrollador"), responsable del tratamiento. Intentamos recopilar solo lo que el juego necesita para funcionar, y aquí te explicamos exactamente qué.</p>
     </div>
-    <h2>1. No se requiere registro</h2>
-    <p>Para jugar no necesitas crear una cuenta ni facilitar datos personales. Tu progreso (niveles completados, tiempos, recompensas, ajustes) se guarda <strong>localmente en tu dispositivo</strong>.</p>
-    <h2>2. Guardado en la nube (opcional)</h2>
-    <p>Si decides iniciar sesión con <strong>Google Play Games Services</strong>, la App guarda tu progreso en la nube mediante la función "Partidas guardadas" de Google, para que puedas recuperarlo en otros dispositivos. En ese caso se tratan un identificador de tu perfil de Google Play Juegos y tus datos de avance. El inicio de sesión es totalmente opcional: puedes usar la App sin hacerlo nunca.</p>
-    <h2>3. Publicidad</h2>
-    <p>La App muestra anuncios a través de <strong>Google AdMob</strong>. Para mostrar anuncios, Google y sus socios pueden recopilar y tratar datos como el identificador publicitario del dispositivo, la dirección IP e información de uso. En el Espacio Económico Europeo, el Reino Unido y Suiza se te pide <strong>consentimiento</strong> antes de cargar los anuncios, mediante el formulario de Google (User Messaging Platform). Puedes cambiar tu elección en cualquier momento desde los Ajustes de la App.</p>
-    <h2>4. Servicios de terceros</h2>
+
+    <h2>1. Jugar sin cuenta</h2>
+    <p>Para jugar no necesitas crear una cuenta ni facilitar datos personales. Tu progreso (niveles completados, tiempos, recompensas, objetos desbloqueados, ajustes, estadísticas) se guarda <strong>localmente en tu dispositivo</strong>. La Campaña, el Desafío del Día y los modos Zen, Lógico e Infinito funcionan también sin conexión.</p>
+
+    <h2>2. Inicio de sesión con Google Play Juegos (opcional)</h2>
+    <p>Puedes elegir iniciar sesión con <strong>Google Play Juegos</strong>. El inicio de sesión sirve para dos cosas:</p>
+    <ul>
+      <li><strong>Guardado en la nube</strong>: tu progreso se guarda mediante la función "Partidas guardadas" de Google, para que puedas recuperarlo en otro dispositivo.</li>
+      <li><strong>Funciones en línea</strong> (ver punto 3): mediante <strong>Firebase Authentication</strong> se crea un identificador de usuario vinculado a tu perfil de Google Play Juegos. Nunca recibimos la contraseña de tu cuenta de Google.</li>
+    </ul>
+    <p>El inicio de sesión es totalmente opcional: puedes usar la App sin hacerlo nunca.</p>
+
+    <h2>3. Clasificaciones y Guerra de los Reinos (funciones en línea)</h2>
+    <p>Si usas la Clasificación del Día o el modo Guerra de los Reinos, en los servidores de Google (<strong>Cloud Firestore</strong> y <strong>Cloud Functions</strong> de Firebase) se almacenan: tu identificador de usuario, el <strong>nombre de juego</strong> que elegiste, tu avatar y tu marco, tus puntuaciones diarias, los resultados y tiempos de las partidas, tu puntuación de habilidad y semanal, y las fichas y objetos desbloqueados en ese modo.</p>
+    <p><strong>Tu nombre de juego, avatar, marco y puntuaciones son visibles para otros jugadores.</strong> No uses como nombre de juego tu nombre real ni otra información personal. Algunos rivales que aparecen en las clasificaciones y en Guerra de los Reinos son adversarios simulados por el juego.</p>
+
+    <h2>4. Publicidad</h2>
+    <p>La App muestra anuncios (banners, intersticiales y vídeos con recompensa opcionales) a través de <strong>Google AdMob</strong>. Para mostrarlos, Google y sus socios pueden recopilar y tratar datos como el identificador publicitario del dispositivo, la dirección IP e información sobre el uso y las interacciones con los anuncios. En el Espacio Económico Europeo, el Reino Unido y Suiza se te pide <strong>consentimiento</strong> antes de cargar los anuncios, mediante el formulario de Google (User Messaging Platform). Puedes cambiar tu elección en cualquier momento en Ajustes › Gestionar consentimiento. También puedes eliminar los anuncios con una compra integrada.</p>
+
+    <h2>5. Estadísticas de uso</h2>
+    <p>La App utiliza <strong>Google Analytics para Firebase</strong> para entender cómo se usa y medir la eficacia de nuestras campañas publicitarias (Google Ads). Se recopilan un identificador de instalación (seudónimo, no tu nombre), el identificador publicitario del dispositivo, información técnica del dispositivo (modelo, versión del sistema, idioma), tu ubicación aproximada obtenida a partir de la dirección IP enmascarada, las sesiones de uso y algunos eventos: la primera apertura de la App, la finalización del primer nivel y las compras (producto, importe y moneda). No enviamos a Google Analytics tu nombre de juego ni los datos de las partidas.</p>
+
+    <h2>6. Compras integradas</h2>
+    <p>La App ofrece compras opcionales (paquetes de cristales y eliminación de anuncios), gestionadas por <strong>Google Play</strong>. Los datos de pago los trata exclusivamente Google: nosotros nunca los recibimos. Solo recibimos la confirmación de la compra (el producto comprado y su identificador de pedido), necesaria para acreditarte lo comprado y restaurar las compras únicas.</p>
+
+    <h2>7. Notificaciones y diagnóstico</h2>
+    <p>El recordatorio del Desafío del Día es una <strong>notificación local</strong> programada en tu dispositivo: no se envía ningún dato. Los posibles errores técnicos de la App se registran <strong>solo en tu dispositivo</strong> (Ajustes › Diagnóstico) y nunca se nos envían automáticamente: solo los recibimos si decides compartirlos.</p>
+
+    <h2>8. Servicios de terceros</h2>
     <p>La App utiliza los siguientes servicios de Google, que tratan los datos según sus propias políticas:</p>
     <ul>
-      <li>Google Play Games Services — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>Google Play Juegos y Google Play (compras) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
       <li>Google AdMob — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></li>
+      <li>Firebase (Authentication, Cloud Firestore, Cloud Functions, Google Analytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     </ul>
-    <h2>5. Menores</h2>
+    <p>Google puede tratar estos datos fuera del Espacio Económico Europeo, aplicando las garantías exigidas por la ley (por ejemplo, las cláusulas contractuales tipo). Las comunicaciones entre la App y estos servicios están cifradas.</p>
+
+    <h2>9. Menores</h2>
     <p>La App es un rompecabezas para público general y no está dirigida específicamente a niños. No recopilamos conscientemente datos personales de menores. Si crees que un menor nos ha facilitado datos, contáctanos y los eliminaremos.</p>
-    <h2>6. Conservación de los datos</h2>
-    <p>Los datos locales permanecen en tu dispositivo hasta que desinstales la App o reinicies el progreso desde los Ajustes. Los datos en la nube siguen vinculados a tu cuenta de Google hasta que los elimines desde los ajustes de Google Play Juegos.</p>
-    <h2>7. Tus derechos</h2>
-    <p>Conforme al RGPD y a la normativa aplicable, tienes derecho a acceder, rectificar o suprimir tus datos y a retirar el consentimiento a la publicidad personalizada. Para ejercerlos, escríbenos a la dirección indicada abajo.</p>
-    <h2>8. Cambios</h2>
-    <p>Podemos actualizar esta política. Los cambios se publicarán en esta página con la nueva fecha de entrada en vigor.</p>
-    <h2>9. Contacto</h2>
+
+    <h2>10. Conservación y eliminación de los datos</h2>
+    <ul>
+      <li><strong>Datos locales</strong>: permanecen en tu dispositivo hasta que desinstales la App o reinicies el progreso (Ajustes › Progreso del juego).</li>
+      <li><strong>Guardado en la nube</strong>: sigue vinculado a tu cuenta de Google hasta que lo elimines desde los ajustes de Google Play Juegos o nos pidas eliminarlo.</li>
+      <li><strong>Datos de las funciones en línea</strong>: se conservan mientras tu perfil en línea esté activo o hasta que solicites su eliminación.</li>
+      <li><strong>Estadísticas de uso</strong>: se conservan según los plazos de conservación configurados en Google Analytics.</li>
+    </ul>
+    <p>Para solicitar la eliminación de tu cuenta y de los datos asociados, sigue las instrucciones de la página <a href="elimina-account.html">Eliminación de la cuenta</a>.</p>
+
+    <h2>11. Tus derechos</h2>
+    <p>Conforme al RGPD y a la normativa aplicable, tienes derecho a acceder a tus datos, rectificarlos, suprimirlos, limitar u oponerte a su tratamiento y retirar el consentimiento a la publicidad personalizada. También puedes presentar una reclamación ante la autoridad de protección de datos. Para ejercer tus derechos, escríbenos a la dirección indicada abajo.</p>
+
+    <h2>12. Cambios</h2>
+    <p>Podemos actualizar esta política, por ejemplo cuando cambie la App. Los cambios se publicarán en esta página con la nueva fecha de entrada en vigor.</p>
+
+    <h2>13. Contacto</h2>
     <p>Para cualquier duda sobre privacidad: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
     <a class="back" href="index.html">← Volver al inicio</a>
   </section>
@@ -147,29 +252,64 @@
   <!-- FRANÇAIS -->
   <section data-lang="fr">
     <div class="card">
-      <p>La présente politique décrit comment l'application <strong>Gardiens des Royaumes</strong> (« l'App ») traite les informations des utilisateurs. L'App est développée par Francesco Torce (« nous », « le développeur »). Nous respectons ta vie privée et ne collectons que le strict nécessaire au fonctionnement du jeu.</p>
+      <p>La présente politique décrit comment l'application <strong>Gardiens des Royaumes</strong> (« l'App ») traite les informations des utilisateurs. L'App est développée par Francesco Torce (« nous », « le développeur »), responsable du traitement. Nous essayons de ne collecter que ce dont le jeu a besoin pour fonctionner, et nous t'expliquons ici exactement quoi.</p>
     </div>
-    <h2>1. Aucune inscription requise</h2>
-    <p>Pour jouer, tu n'as pas besoin de créer un compte ni de fournir de données personnelles. Ta progression (niveaux terminés, temps, récompenses, réglages) est enregistrée <strong>localement sur ton appareil</strong>.</p>
-    <h2>2. Sauvegarde dans le cloud (facultative)</h2>
-    <p>Si tu choisis de te connecter avec <strong>Google Play Games Services</strong>, l'App sauvegarde ta progression dans le cloud via la fonction « Parties enregistrées » de Google, afin de la retrouver sur d'autres appareils. Dans ce cas, un identifiant de ton profil Google Play Jeux et tes données de progression sont traités. La connexion est entièrement facultative : tu peux utiliser l'App sans jamais te connecter.</p>
-    <h2>3. Publicité</h2>
-    <p>L'App affiche des publicités via <strong>Google AdMob</strong>. Pour diffuser les annonces, Google et ses partenaires peuvent collecter et traiter des données telles que l'identifiant publicitaire de l'appareil, l'adresse IP et des informations d'utilisation. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, ton <strong>consentement</strong> t'est demandé avant le chargement des annonces, via le formulaire de Google (User Messaging Platform). Tu peux modifier ton choix à tout moment dans les Réglages de l'App.</p>
-    <h2>4. Services tiers</h2>
+
+    <h2>1. Jouer sans compte</h2>
+    <p>Pour jouer, tu n'as pas besoin de créer un compte ni de fournir de données personnelles. Ta progression (niveaux terminés, temps, récompenses, objets débloqués, réglages, statistiques) est enregistrée <strong>localement sur ton appareil</strong>. La Campagne, le Défi du Jour et les modes Zen, Logique et Infini fonctionnent aussi sans connexion.</p>
+
+    <h2>2. Connexion avec Google Play Jeux (facultative)</h2>
+    <p>Tu peux choisir de te connecter avec <strong>Google Play Jeux</strong>. La connexion sert à deux choses :</p>
+    <ul>
+      <li><strong>Sauvegarde dans le cloud</strong> : ta progression est enregistrée via la fonction « Parties enregistrées » de Google, afin de la retrouver sur un autre appareil.</li>
+      <li><strong>Fonctions en ligne</strong> (voir point 3) : <strong>Firebase Authentication</strong> crée un identifiant utilisateur lié à ton profil Google Play Jeux. Nous ne recevons jamais le mot de passe de ton compte Google.</li>
+    </ul>
+    <p>La connexion est entièrement facultative : tu peux utiliser l'App sans jamais te connecter.</p>
+
+    <h2>3. Classements et Guerre des Royaumes (fonctions en ligne)</h2>
+    <p>Si tu utilises le Classement du Jour ou le mode Guerre des Royaumes, les données suivantes sont enregistrées sur les serveurs de Google (<strong>Cloud Firestore</strong> et <strong>Cloud Functions</strong> de Firebase) : ton identifiant utilisateur, le <strong>nom de joueur</strong> que tu as choisi, ton avatar et ton cadre, tes scores quotidiens, les résultats et temps des parties, ton classement d'habileté et hebdomadaire, ainsi que les jetons et objets débloqués dans ce mode.</p>
+    <p><strong>Ton nom de joueur, ton avatar, ton cadre et tes scores sont visibles par les autres joueurs.</strong> N'utilise pas ton vrai nom ni d'autres informations personnelles comme nom de joueur. Certains rivaux affichés dans les classements et dans la Guerre des Royaumes sont des adversaires simulés par le jeu.</p>
+
+    <h2>4. Publicité</h2>
+    <p>L'App affiche des publicités (bannières, interstitiels et vidéos récompensées facultatives) via <strong>Google AdMob</strong>. Pour les diffuser, Google et ses partenaires peuvent collecter et traiter des données telles que l'identifiant publicitaire de l'appareil, l'adresse IP et des informations sur l'utilisation et les interactions avec les annonces. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, ton <strong>consentement</strong> t'est demandé avant le chargement des annonces, via le formulaire de Google (User Messaging Platform). Tu peux modifier ton choix à tout moment dans Réglages › Gérer le consentement. Tu peux aussi supprimer les publicités grâce à un achat intégré.</p>
+
+    <h2>5. Statistiques d'utilisation</h2>
+    <p>L'App utilise <strong>Google Analytics pour Firebase</strong> pour comprendre comment elle est utilisée et mesurer l'efficacité de nos campagnes publicitaires (Google Ads). Sont collectés : un identifiant d'installation (pseudonyme, pas ton nom), l'identifiant publicitaire de l'appareil, des informations techniques sur l'appareil (modèle, version du système, langue), ta localisation approximative déduite de l'adresse IP masquée, les sessions d'utilisation et quelques événements : la première ouverture de l'App, la réussite du premier niveau et les achats (produit, montant et devise). Nous n'envoyons pas à Google Analytics ton nom de joueur ni les données de tes parties.</p>
+
+    <h2>6. Achats intégrés</h2>
+    <p>L'App propose des achats facultatifs (packs de cristaux et suppression des publicités), gérés par <strong>Google Play</strong>. Les données de paiement sont traitées exclusivement par Google : nous ne les recevons jamais. Nous recevons uniquement la confirmation de l'achat (produit acheté et identifiant de commande), nécessaire pour te créditer ton achat et restaurer les achats uniques.</p>
+
+    <h2>7. Notifications et diagnostic</h2>
+    <p>Le rappel du Défi du Jour est une <strong>notification locale</strong> programmée sur ton appareil : aucune donnée n'est envoyée. Les éventuelles erreurs techniques de l'App sont enregistrées <strong>uniquement sur ton appareil</strong> (Réglages › Diagnostic) et ne nous sont jamais envoyées automatiquement : nous ne les recevons que si tu choisis de les partager.</p>
+
+    <h2>8. Services tiers</h2>
     <p>L'App s'appuie sur les services Google suivants, qui traitent les données selon leurs propres politiques :</p>
     <ul>
-      <li>Google Play Games Services — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li>Google Play Jeux et Google Play (achats) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
       <li>Google AdMob — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a></li>
+      <li>Firebase (Authentication, Cloud Firestore, Cloud Functions, Google Analytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     </ul>
-    <h2>5. Enfants</h2>
+    <p>Google peut traiter ces données en dehors de l'Espace économique européen, en appliquant les garanties prévues par la loi (par exemple les clauses contractuelles types). Les communications entre l'App et ces services sont chiffrées.</p>
+
+    <h2>9. Enfants</h2>
     <p>L'App est un casse-tête tout public et ne s'adresse pas spécifiquement aux enfants. Nous ne collectons pas sciemment de données personnelles de mineurs. Si tu penses qu'un mineur nous a fourni des données, contacte-nous et nous les supprimerons.</p>
-    <h2>6. Conservation des données</h2>
-    <p>Les données locales restent sur ton appareil jusqu'à la désinstallation de l'App ou la réinitialisation de la progression dans les Réglages. Les données du cloud restent liées à ton compte Google jusqu'à ce que tu les supprimes via les réglages de Google Play Jeux.</p>
-    <h2>7. Tes droits</h2>
-    <p>Conformément au RGPD et aux lois applicables, tu as le droit d'accéder à tes données, de les rectifier ou de les supprimer, et de retirer ton consentement à la publicité personnalisée. Pour les exercer, écris-nous à l'adresse ci-dessous.</p>
-    <h2>8. Modifications</h2>
-    <p>Nous pouvons mettre à jour cette politique. Les modifications seront publiées sur cette page avec la nouvelle date d'entrée en vigueur.</p>
-    <h2>9. Contact</h2>
+
+    <h2>10. Conservation et suppression des données</h2>
+    <ul>
+      <li><strong>Données locales</strong> : restent sur ton appareil jusqu'à la désinstallation de l'App ou la réinitialisation de la progression (Réglages › Progression du jeu).</li>
+      <li><strong>Sauvegarde dans le cloud</strong> : reste liée à ton compte Google jusqu'à ce que tu la supprimes dans les réglages de Google Play Jeux ou que tu nous demandes de la supprimer.</li>
+      <li><strong>Données des fonctions en ligne</strong> : sont conservées tant que ton profil en ligne est actif ou jusqu'à ce que tu demandes leur suppression.</li>
+      <li><strong>Statistiques d'utilisation</strong> : sont conservées selon les durées de conservation définies dans Google Analytics.</li>
+    </ul>
+    <p>Pour demander la suppression de ton compte et des données associées, suis les instructions de la page <a href="elimina-account.html">Suppression du compte</a>.</p>
+
+    <h2>11. Tes droits</h2>
+    <p>Conformément au RGPD et aux lois applicables, tu as le droit d'accéder à tes données, de les rectifier, de les supprimer, d'en limiter le traitement ou de t'y opposer, et de retirer ton consentement à la publicité personnalisée. Tu peux aussi introduire une réclamation auprès de l'autorité de protection des données (en France, la CNIL). Pour exercer tes droits, écris-nous à l'adresse ci-dessous.</p>
+
+    <h2>12. Modifications</h2>
+    <p>Nous pouvons mettre à jour cette politique, par exemple lorsque l'App évolue. Les modifications seront publiées sur cette page avec la nouvelle date d'entrée en vigueur.</p>
+
+    <h2>13. Contact</h2>
     <p>Pour toute question relative à la confidentialité : <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
     <a class="back" href="index.html">← Retour à l'accueil</a>
   </section>
@@ -179,10 +319,10 @@
 
 <script>
   var meta = {
-    it:{title:"Norme sulla privacy", eff:"In vigore dal 11 settembre 2026"},
-    en:{title:"Privacy Policy", eff:"Effective from 11 September 2026"},
-    es:{title:"Política de privacidad", eff:"En vigor desde el 11 de septiembre de 2026"},
-    fr:{title:"Politique de confidentialité", eff:"En vigueur à partir du 11 septembre 2026"}
+    it:{title:"Norme sulla privacy", eff:"In vigore dal 28 settembre 2026"},
+    en:{title:"Privacy Policy", eff:"Effective from 28 September 2026"},
+    es:{title:"Política de privacidad", eff:"En vigor desde el 28 de septiembre de 2026"},
+    fr:{title:"Politique de confidentialité", eff:"En vigueur à partir du 28 septembre 2026"}
   };
   function setLang(l){
     document.documentElement.lang=l;
