@@ -191,7 +191,7 @@
   document.querySelectorAll('.langbar button').forEach(function(b){
     b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
   });
-  var nav=(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
+  var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1]; var nav=q||(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
 </script>
 </body>
 </html>

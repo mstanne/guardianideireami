@@ -47,7 +47,7 @@
       <path d="M50 8 58 38 88 34 64 52 76 80 50 62 24 80 36 52 12 34 42 38Z" fill="currentColor"/>
     </svg>
     <h1 id="title">Eliminazione dell'account</h1>
-    <p class="eff" id="eff">In vigore dal 28 settembre 2026</p>
+    <p class="eff" id="eff">In vigore dal 1° ottobre 2026</p>
     <div class="langbar">
       <button data-set="it" class="active">Italiano</button>
       <button data-set="en">English</button>
@@ -66,7 +66,8 @@
     <ul>
       <li>i progressi salvati nel cloud (livelli completati, tempi, ricompense, impostazioni);</li>
       <li>l'identificativo del tuo profilo Google Play Games utilizzato dal gioco;</li>
-      <li>i dati della classifica online e della modalità sfida tra giocatori (punteggi, posizionamenti) collegati al tuo profilo.</li>
+      <li>i dati della classifica online e della modalità sfida tra giocatori (punteggi, posizionamenti) collegati al tuo profilo;</li>
+      <li>i dati de <strong>La Compagnia</strong>: Sigillo, alleati, richieste di alleanza, blocchi, saluti, bilanci dei Duelli d'onore e tornei tra alleati. Puoi cancellarli anche da solo, subito, da La Compagnia › Sigillo › «Cancella i miei dati della Compagnia».</li>
     </ul>
     <p>I dati salvati solo <strong>localmente</strong> sul tuo dispositivo si rimuovono disinstallando l'App o azzerando i progressi dalle Impostazioni del gioco.</p>
     <h2>2. Come richiedere l'eliminazione</h2>
@@ -90,7 +91,8 @@
     <ul>
       <li>cloud-saved progress (completed levels, times, rewards, settings);</li>
       <li>the Google Play Games profile identifier used by the game;</li>
-      <li>online leaderboard and player-vs-player data (scores, rankings) tied to your profile.</li>
+      <li>online leaderboard and player-vs-player data (scores, rankings) tied to your profile;</li>
+      <li><strong>The Fellowship</strong> data: Seal, allies, alliance requests, blocks, greetings, Duel of Honour records and tournaments between allies. You can also delete these yourself, immediately, from The Fellowship › Seal › «Delete my Fellowship data».</li>
     </ul>
     <p>Data stored only <strong>locally</strong> on your device is removed by uninstalling the App or resetting your progress in the game Settings.</p>
     <h2>2. How to request deletion</h2>
@@ -114,7 +116,8 @@
     <ul>
       <li>el progreso guardado en la nube (niveles completados, tiempos, recompensas, ajustes);</li>
       <li>el identificador de tu perfil de Google Play Juegos usado por el juego;</li>
-      <li>los datos de la clasificación en línea y del modo entre jugadores (puntuaciones, posiciones) vinculados a tu perfil.</li>
+      <li>los datos de la clasificación en línea y del modo entre jugadores (puntuaciones, posiciones) vinculados a tu perfil;</li>
+      <li>los datos de <strong>La Compañía</strong>: Sello, aliados, solicitudes de alianza, bloqueos, saludos, balances de los Duelos de honor y torneos entre aliados. También puedes borrarlos tú mismo, al momento, desde La Compañía › Sello › «Borrar mis datos de la Compañía».</li>
     </ul>
     <p>Los datos guardados solo <strong>localmente</strong> en tu dispositivo se eliminan desinstalando la App o reiniciando el progreso desde los Ajustes del juego.</p>
     <h2>2. Cómo solicitar la eliminación</h2>
@@ -138,7 +141,8 @@
     <ul>
       <li>la progression sauvegardée dans le cloud (niveaux terminés, temps, récompenses, réglages) ;</li>
       <li>l'identifiant de ton profil Google Play Jeux utilisé par le jeu ;</li>
-      <li>les données du classement en ligne et du mode joueur contre joueur (scores, positions) liées à ton profil.</li>
+      <li>les données du classement en ligne et du mode joueur contre joueur (scores, positions) liées à ton profil ;</li>
+      <li>les données de <strong>La Compagnie</strong> : Sceau, alliés, demandes d'alliance, blocages, salutations, bilans des Duels d'honneur et tournois entre alliés. Tu peux aussi les effacer toi-même, immédiatement, depuis La Compagnie › Sceau › « Effacer mes données de la Compagnie ».</li>
     </ul>
     <p>Les données enregistrées uniquement <strong>localement</strong> sur ton appareil se suppriment en désinstallant l'App ou en réinitialisant la progression dans les Réglages du jeu.</p>
     <h2>2. Comment demander la suppression</h2>
@@ -157,10 +161,10 @@
 
 <script>
   var meta = {
-    it:{title:"Eliminazione dell'account", eff:"In vigore dal 28 settembre 2026"},
-    en:{title:"Account deletion", eff:"Effective from 28 September 2026"},
-    es:{title:"Eliminación de la cuenta", eff:"En vigor desde el 28 de septiembre de 2026"},
-    fr:{title:"Suppression du compte", eff:"En vigueur à partir du 28 septembre 2026"}
+    it:{title:"Eliminazione dell'account", eff:"In vigore dal 1° ottobre 2026"},
+    en:{title:"Account deletion", eff:"Effective from 1 October 2026"},
+    es:{title:"Eliminación de la cuenta", eff:"En vigor desde el 1 de octubre de 2026"},
+    fr:{title:"Suppression du compte", eff:"En vigueur à partir du 1er octobre 2026"}
   };
   function setLang(l){
     document.documentElement.lang=l;
@@ -178,7 +182,7 @@
   document.querySelectorAll('.langbar button').forEach(function(b){
     b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
   });
-  var nav=(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
+  var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1]; var nav=q||(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
 </script>
 </body>
 </html>
