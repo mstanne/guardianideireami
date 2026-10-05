@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premio di preregistrazione — Guardiani dei Reami</title>
+<style>
+  :root{
+    --gold:#c9a227; --gold-bright:#efc75e; --gold-deep:#8f6f16;
+    --vellum:#ece0c4; --vellum-soft:#cdbf9a;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:radial-gradient(circle at 50% 0%,#241d12,#14110b 60%);color:var(--vellum);
+    font-family:var(--serif);line-height:1.65;min-height:100vh;}
+  .wrap{max-width:800px;margin:0 auto;padding:30px 20px 60px;}
+  header{text-align:center;padding:10px 0;}
+  .emblem{width:64px;height:64px;color:var(--gold-bright);filter:drop-shadow(0 0 12px rgba(201,162,39,.5));}
+  h1{font-size:28px;letter-spacing:.05em;color:var(--gold-bright);margin:10px 0 2px;}
+  .eff{color:#8a7c5c;font-size:14px;margin:0 0 6px;}
+  .langbar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 26px;}
+  .langbar button{font-family:var(--serif);background:linear-gradient(180deg,#241d11,#191309);
+    border:1px solid var(--gold-deep);color:var(--gold-bright);padding:7px 16px;border-radius:12px;
+    cursor:pointer;font-size:14px;letter-spacing:.05em;}
+  .langbar button.active{background:linear-gradient(180deg,#3a2410,#241206);border-color:var(--gold-bright);
+    box-shadow:inset 0 1px 0 rgba(239,199,94,.25);}
+  section[data-lang]{display:none;}
+  section[data-lang].show{display:block;}
+  h2{color:var(--gold-bright);font-size:20px;letter-spacing:.02em;border-bottom:1px solid #3a3020;
+    padding-bottom:7px;margin:30px 0 12px;}
+  p{margin:0 0 14px;}
+  a{color:var(--gold-bright);}
+  .card{background:linear-gradient(160deg,#211a10,#171208);border:1px solid #3a3020;border-radius:14px;
+    padding:18px 22px;margin:0 0 18px;}
+  .back{display:inline-block;margin-top:8px;color:var(--gold);text-decoration:none;font-size:15px;}
+  .reward{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+  footer{text-align:center;color:#8a7c5c;font-size:13px;margin-top:34px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M50 8 58 38 88 34 64 52 76 80 50 62 24 80 36 52 12 34 42 38Z" fill="currentColor"/>
+    </svg>
+    <h1 id="title">Premio di preregistrazione — Termini e condizioni</h1>
+    <p class="eff" id="eff">In vigore dal 5 ottobre 2026</p>
+    <div class="langbar">
+      <button data-set="it" class="active">Italiano</button>
+      <button data-set="en">English</button>
+      <button data-set="es">Español</button>
+      <button data-set="fr">Français</button>
+    </div>
+  </header>
+
+    <!-- ITALIANO -->
+  <section data-lang="it" class="show">
+    <div class="card">
+      <p>Questi termini regolano il premio offerto a chi si preregistra all'app <strong>Guardiani dei Reami</strong> ("l'App") su Google Play. Si aggiungono ai <a href="terms.html">Termini di servizio</a> dell'App. Il promotore è Francesco Torce ("lo sviluppatore").</p>
+    </div>
+    <h2>1. Chi può partecipare</h2>
+    <p>Possono ottenere il premio gli utenti che, durante il periodo di preregistrazione, toccano «Preregistrati» nella pagina dell'App su Google Play, in uno dei paesi in cui la preregistrazione è disponibile. La partecipazione è gratuita e non richiede alcun acquisto.</p>
+    <h2>2. Il premio</h2>
+    <p>Il premio è composto da due oggetti cosmetici esclusivi da usare nel profilo di gioco: l'avatar <strong>«Araldo dell'Alba»</strong> e la cornice <strong>«Sigillo dei Primi Guardiani»</strong>. Ogni account Google può ricevere il premio una sola volta.</p>
+    <h2>3. Come si riceve</h2>
+    <p>Il premio viene consegnato automaticamente da Google Play quando installi e apri l'App per la prima volta dopo la sua pubblicazione, usando lo stesso account Google con cui ti sei preregistrato. Serve una connessione a Internet al momento dell'apertura. Il premio resta legato a quell'account Google e viene ripristinato anche dopo una reinstallazione.</p>
+    <h2>4. Natura del premio</h2>
+    <p>Il premio è puramente cosmetico: non dà vantaggi nel gioco, non ha valore in denaro e non può essere convertito in denaro, rimborsato, scambiato né trasferito ad altri account o utenti.</p>
+    <h2>5. Durata della campagna</h2>
+    <p>La preregistrazione è aperta fino alla pubblicazione dell'App su Google Play. Chi si preregistra dopo la chiusura, o installa l'App senza essersi preregistrato, non riceve il premio.</p>
+    <h2>6. Modifiche e annullamento</h2>
+    <p>Lo sviluppatore può modificare, sospendere o annullare la campagna per motivi tecnici o legali; le modifiche saranno pubblicate su questa pagina con la nuova data. Le modifiche non tolgono il premio a chi lo ha già ricevuto.</p>
+    <h2>7. Google Play</h2>
+    <p>La preregistrazione e la consegna del premio avvengono tramite Google Play e sono soggette anche ai termini di servizio di Google Play. Google non è sponsor né promotore di questa iniziativa.</p>
+    <h2>8. Contatti</h2>
+    <p>Per problemi con il premio o qualsiasi domanda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="terms.html">← Torna ai Termini di servizio</a>
+  </section>
+
+  <!-- ENGLISH -->
+  <section data-lang="en">
+    <div class="card">
+      <p>These terms govern the reward offered to people who pre-register for the app <strong>Guardians of the Realms</strong> ("the App") on Google Play. They supplement the App's <a href="terms.html">Terms of Service</a>. The promoter is Francesco Torce ("the developer").</p>
+    </div>
+    <h2>1. Who can take part</h2>
+    <p>The reward is available to users who, during the pre-registration period, tap "Pre-register" on the App's Google Play page in a country where pre-registration is available. Taking part is free and no purchase is required.</p>
+    <h2>2. The reward</h2>
+    <p>The reward consists of two exclusive cosmetic items for your game profile: the <strong>"Herald of Dawn"</strong> avatar and the <strong>"Seal of the First Guardians"</strong> frame. Each Google account can receive the reward only once.</p>
+    <h2>3. How you receive it</h2>
+    <p>The reward is delivered automatically by Google Play when you install and open the App for the first time after its release, using the same Google account you pre-registered with. An Internet connection is needed when you open it. The reward stays linked to that Google account and is restored after a reinstall.</p>
+    <h2>4. Nature of the reward</h2>
+    <p>The reward is purely cosmetic: it gives no gameplay advantage, has no monetary value and cannot be converted into money, refunded, exchanged or transferred to other accounts or users.</p>
+    <h2>5. Campaign period</h2>
+    <p>Pre-registration is open until the App is released on Google Play. People who pre-register after it closes, or install the App without pre-registering, do not receive the reward.</p>
+    <h2>6. Changes and cancellation</h2>
+    <p>The developer may change, suspend or cancel the campaign for technical or legal reasons; changes will be posted on this page with a new date. Changes do not remove the reward from anyone who has already received it.</p>
+    <h2>7. Google Play</h2>
+    <p>Pre-registration and reward delivery take place through Google Play and are also subject to the Google Play Terms of Service. Google is not a sponsor or promoter of this campaign.</p>
+    <h2>8. Contact</h2>
+    <p>For problems with the reward or any questions: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="terms.html">← Back to the Terms of Service</a>
+  </section>
+
+  <!-- ESPAÑOL -->
+  <section data-lang="es">
+    <div class="card">
+      <p>Estos términos regulan el premio que se ofrece a quienes se prerregistran en la aplicación <strong>Guardianes de los Reinos</strong> ("la App") en Google Play. Complementan los <a href="terms.html">Términos del servicio</a> de la App. El promotor es Francesco Torce ("el desarrollador").</p>
+    </div>
+    <h2>1. Quién puede participar</h2>
+    <p>Pueden obtener el premio los usuarios que, durante el periodo de prerregistro, toquen «Prerregistrarse» en la página de la App en Google Play, en un país donde el prerregistro esté disponible. La participación es gratuita y no requiere ninguna compra.</p>
+    <h2>2. El premio</h2>
+    <p>El premio consiste en dos objetos cosméticos exclusivos para tu perfil de juego: el avatar <strong>«Heraldo del Alba»</strong> y el marco <strong>«Sello de los Primeros Guardianes»</strong>. Cada cuenta de Google puede recibir el premio una sola vez.</p>
+    <h2>3. Cómo se recibe</h2>
+    <p>Google Play entrega el premio automáticamente cuando instalas y abres la App por primera vez tras su lanzamiento, con la misma cuenta de Google con la que te prerregistraste. Se necesita conexión a Internet al abrirla. El premio queda vinculado a esa cuenta de Google y se restaura tras una reinstalación.</p>
+    <h2>4. Naturaleza del premio</h2>
+    <p>El premio es solo cosmético: no da ventajas en el juego, no tiene valor monetario y no puede convertirse en dinero, reembolsarse, canjearse ni transferirse a otras cuentas o usuarios.</p>
+    <h2>5. Duración de la campaña</h2>
+    <p>El prerregistro está abierto hasta el lanzamiento de la App en Google Play. Quien se prerregistre después del cierre, o instale la App sin haberse prerregistrado, no recibe el premio.</p>
+    <h2>6. Cambios y cancelación</h2>
+    <p>El desarrollador puede modificar, suspender o cancelar la campaña por motivos técnicos o legales; los cambios se publicarán en esta página con la nueva fecha. Los cambios no retiran el premio a quien ya lo haya recibido.</p>
+    <h2>7. Google Play</h2>
+    <p>El prerregistro y la entrega del premio se realizan a través de Google Play y también están sujetos a las condiciones de servicio de Google Play. Google no patrocina ni promueve esta iniciativa.</p>
+    <h2>8. Contacto</h2>
+    <p>Para problemas con el premio o cualquier duda: <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="terms.html">← Volver a los Términos del servicio</a>
+  </section>
+
+  <!-- FRANÇAIS -->
+  <section data-lang="fr">
+    <div class="card">
+      <p>Ces conditions régissent la récompense offerte aux personnes qui se préinscrivent à l'application <strong>Gardiens des Royaumes</strong> (« l'App ») sur Google Play. Elles complètent les <a href="terms.html">Conditions d'utilisation</a> de l'App. L'organisateur est Francesco Torce (« le développeur »).</p>
+    </div>
+    <h2>1. Qui peut participer</h2>
+    <p>Peuvent obtenir la récompense les utilisateurs qui, pendant la période de préinscription, touchent « Préinscription » sur la page de l'App dans Google Play, dans un pays où la préinscription est disponible. La participation est gratuite et ne nécessite aucun achat.</p>
+    <h2>2. La récompense</h2>
+    <p>La récompense se compose de deux objets cosmétiques exclusifs pour ton profil de jeu : l'avatar <strong>« Héraut de l'Aube »</strong> et le cadre <strong>« Sceau des Premiers Gardiens »</strong>. Chaque compte Google ne peut recevoir la récompense qu'une seule fois.</p>
+    <h2>3. Comment la recevoir</h2>
+    <p>La récompense est livrée automatiquement par Google Play lorsque tu installes et ouvres l'App pour la première fois après sa sortie, avec le même compte Google que celui utilisé pour la préinscription. Une connexion Internet est nécessaire à l'ouverture. La récompense reste liée à ce compte Google et est restaurée après une réinstallation.</p>
+    <h2>4. Nature de la récompense</h2>
+    <p>La récompense est purement cosmétique : elle ne donne aucun avantage dans le jeu, n'a aucune valeur monétaire et ne peut être ni convertie en argent, ni remboursée, ni échangée, ni transférée à d'autres comptes ou utilisateurs.</p>
+    <h2>5. Durée de la campagne</h2>
+    <p>La préinscription est ouverte jusqu'à la sortie de l'App sur Google Play. Les personnes qui se préinscrivent après la clôture, ou qui installent l'App sans s'être préinscrites, ne reçoivent pas la récompense.</p>
+    <h2>6. Modifications et annulation</h2>
+    <p>Le développeur peut modifier, suspendre ou annuler la campagne pour des raisons techniques ou juridiques ; les modifications seront publiées sur cette page avec la nouvelle date. Elles ne retirent pas la récompense à ceux qui l'ont déjà reçue.</p>
+    <h2>7. Google Play</h2>
+    <p>La préinscription et la livraison de la récompense passent par Google Play et sont également soumises aux conditions d'utilisation de Google Play. Google n'est ni sponsor ni organisateur de cette opération.</p>
+    <h2>8. Contact</h2>
+    <p>Pour tout problème avec la récompense ou toute question : <a href="mailto:francescotorce@gmail.com">francescotorce@gmail.com</a></p>
+    <a class="back" href="terms.html">← Retour aux Conditions d'utilisation</a>
+  </section>
+
+  <footer><p>© 2026 Guardiani dei Reami</p></footer>
+</div>
+
+<script>
+  var meta = {
+    it:{title:"Premio di preregistrazione — Termini e condizioni", eff:"In vigore dal 5 ottobre 2026"},
+    en:{title:"Pre-registration reward — Terms and conditions", eff:"Effective from 5 October 2026"},
+    es:{title:"Premio de prerregistro — Términos y condiciones", eff:"En vigor desde el 5 de octubre de 2026"},
+    fr:{title:"Récompense de préinscription — Conditions", eff:"En vigueur à partir du 5 octobre 2026"}
+  };
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('section[data-lang]').forEach(function(s){
+      s.classList.toggle('show', s.getAttribute('data-lang')===l);
+    });
+    document.querySelectorAll('.langbar button').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-set')===l);
+    });
+    var m=meta[l]||meta.it;
+    document.getElementById('title').textContent=m.title;
+    document.getElementById('eff').textContent=m.eff;
+    document.title=m.title+" — Guardiani dei Reami";
+  }
+  document.querySelectorAll('.langbar button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set')); });
+  });
+  var q=(location.search.match(/[?&]lang=([a-z]{2})/)||[])[1]; var nav=q||(navigator.language||'it').slice(0,2); if(!meta[nav]) nav='it'; setLang(nav);
+</script>
+</body>
+</html>
